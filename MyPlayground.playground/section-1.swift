@@ -35,4 +35,6 @@ let exclamationMark: Character = "!"
 let dogString = "Dog‼🐶"
 
 var airports = ["YYZ": "Toronto Pearson", 1: "Dublin"]
-airports.keys
+for x in airports.keys {
+    println(x)
+}
