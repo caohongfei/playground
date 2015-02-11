@@ -1,2 +1,1 @@
-# playground
-My personal playground
+This is my personal playground.
