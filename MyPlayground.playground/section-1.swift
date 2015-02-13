@@ -38,3 +38,34 @@ var airports = ["YYZ": "Toronto Pearson", 1: "Dublin"]
 for x in airports.keys {
     println(x)
 }
+
+func containsCharacter(#string: String, characterToFind: Character) -> Bool {
+    for character in string {
+        if character == characterToFind {
+            return true
+        }
+    }
+    return false
+}
+
+containsCharacter(string: "abc", "a")
+
+func join(string s1: String, toString s2: String, let withJoiner joiner: String) -> String {
+        return s1 + joiner + s2
+}
+
+func someFunctionThatTakesAClosure(closure: () -> ()) {
+    // function body goes here
+}
+
+// here's how you call this function without using a trailing closure:
+
+someFunctionThatTakesAClosure({
+    // closure's body goes here
+})
+
+// here's how you call this function with a trailing closure instead:
+
+someFunctionThatTakesAClosure{
+    // trailing closure's body goes here
+}
