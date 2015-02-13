@@ -3,8 +3,9 @@
 import Cocoa
 
 var str = "Hello, playground"
-var d = 3.233
-var abc = 10 + d
+var d: Double? = 3.233
+//d = nil
+var abc = 10 + d!
 let http404Error: (Int, String) = (404, "Not Found")
 
 let possibleNumber = "123"
@@ -39,6 +40,14 @@ for x in airports.keys {
     println(x)
 }
 
+var abcd: Int = 12 {
+willSet {
+    println("\(newValue) is set")
+}
+}
+
+abcd = 18
+
 func containsCharacter(#string: String, characterToFind: Character) -> Bool {
     for character in string {
         if character == characterToFind {
@@ -69,3 +78,5 @@ someFunctionThatTakesAClosure({
 someFunctionThatTakesAClosure{
     // trailing closure's body goes here
 }
+
+
