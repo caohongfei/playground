@@ -80,3 +80,86 @@ someFunctionThatTakesAClosure{
 }
 
 
+class Test {
+    var m: Int {
+        get {
+            return 12
+        }
+        set {
+
+        }
+    }
+
+    let n: Int = 17
+}
+
+
+
+struct Fahrenheit {
+    var temperature: Double
+    init() {
+        temperature = 12.0
+    }
+}
+var f = Fahrenheit()
+println("The default temperature is \(f.temperature)° Fahrenheit")
+
+
+struct Celsius {
+    var temperatureInCelsius: Double
+    init(fromFahrenheit fahrenheit: Double) {
+        temperatureInCelsius = (fahrenheit - 32.0) / 1.8
+    }
+    init(fromKelvin kelvin: Double) {
+        temperatureInCelsius = kelvin - 273.15
+    }
+}
+let boilingPointOfWater = Celsius(fromFahrenheit: 212.0)
+// boilingPointOfWater.temperatureInCelsius is 100.0
+let freezingPointOfWater = Celsius(fromKelvin: 273.15)
+// freezingPointOfWater.temperatureInCelsius is 0.0
+
+
+
+
+
+struct Size {
+    var width = 0.0, height = 0.0
+}
+let twoByTwo = Size(width: 2.0, height: 2.0)
+let zero = Size()
+
+
+
+
+
+
+enum TemperatureUnit {
+    case Kelvin, Celsius, Fahrenheit
+    init?(symbol: Character) {
+        switch symbol {
+        case "K":
+            self = .Kelvin
+        case "C":
+            self = .Celsius
+        case "F":
+            self = .Fahrenheit
+        default:
+            return nil
+        }
+    }
+}
+
+let fahrenheitUnit = TemperatureUnit(symbol: "F")
+if fahrenheitUnit != nil {
+    println("This is a defined temperature unit, so initialization succeeded.")
+}
+
+
+
+
+
+
+
+
+
