@@ -2,24 +2,6 @@
 
 import Cocoa
 
-var str = "Hello, playground"
-var d: Double? = 3.233
-//d = nil
-var abc = 10 + d!
-let http404Error: (Int, String) = (404, "Not Found")
-
-let possibleNumber = "123"
-let convertedNumber = possibleNumber.toInt()
-if convertedNumber != nil {
-    println("convertedNumber has an integer value of \(convertedNumber).")
-}
-
-let defaultColorName = "red"
-var userDefinedColorName: String = "b"   // defaults to nil
-
-var colorNameToUse = userDefinedColorName ?? defaultColorName
-// userDefinedColorName is nil, so colorNameToUse is set to the default of "red"
-
 let allowedEntry = false
 if !allowedEntry {
     println("ACCESS DENIED")
@@ -63,22 +45,6 @@ func join(string s1: String, toString s2: String, let withJoiner joiner: String)
         return s1 + joiner + s2
 }
 
-func someFunctionThatTakesAClosure(closure: () -> ()) {
-    // function body goes here
-}
-
-// here's how you call this function without using a trailing closure:
-
-someFunctionThatTakesAClosure({
-    // closure's body goes here
-})
-
-// here's how you call this function with a trailing closure instead:
-
-someFunctionThatTakesAClosure{
-    // trailing closure's body goes here
-}
-
 
 class Test {
     var m: Int {
@@ -120,45 +86,11 @@ let freezingPointOfWater = Celsius(fromKelvin: 273.15)
 // freezingPointOfWater.temperatureInCelsius is 0.0
 
 
-
-
-
-struct Size {
-    var width = 0.0, height = 0.0
-}
-let twoByTwo = Size(width: 2.0, height: 2.0)
-let zero = Size()
-
-
-
-
-
-
-enum TemperatureUnit {
-    case Kelvin, Celsius, Fahrenheit
-    init?(symbol: Character) {
-        switch symbol {
-        case "K":
-            self = .Kelvin
-        case "C":
-            self = .Celsius
-        case "F":
-            self = .Fahrenheit
-        default:
-            return nil
-        }
-    }
-}
-
-let fahrenheitUnit = TemperatureUnit(symbol: "F")
-if fahrenheitUnit != nil {
-    println("This is a defined temperature unit, so initialization succeeded.")
-}
-
-
-
-
-
+var i1 = 4
+i1 = 5
+var i2 = i1 * 10
+i1 = 6
+println(i2)
 
 
 
