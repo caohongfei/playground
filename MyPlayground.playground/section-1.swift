@@ -2,21 +2,6 @@
 
 import Cocoa
 
-let allowedEntry = false
-if !allowedEntry {
-    println("ACCESS DENIED")
-}
-
-let a: Character = "b"
-
-let string1 = "hello"
-let string2 = " there"
-var welcome = string1 + string2
-// welcome now equals "hello there"
-let exclamationMark: Character = "!"
-
-let dogString = "Dog‼🐶"
-
 var airports = ["YYZ": "Toronto Pearson", 1: "Dublin"]
 for x in airports.keys {
     println(x)
@@ -30,21 +15,6 @@ willSet {
 
 abcd = 18
 
-func containsCharacter(#string: String, characterToFind: Character) -> Bool {
-    for character in string {
-        if character == characterToFind {
-            return true
-        }
-    }
-    return false
-}
-
-containsCharacter(string: "abc", "a")
-
-func join(string s1: String, toString s2: String, let withJoiner joiner: String) -> String {
-        return s1 + joiner + s2
-}
-
 
 class Test {
     var m: Int {
@@ -56,20 +26,8 @@ class Test {
         }
     }
 
-    let n: Int = 17
+    let n: Int?
 }
-
-
-
-struct Fahrenheit {
-    var temperature: Double
-    init() {
-        temperature = 12.0
-    }
-}
-var f = Fahrenheit()
-println("The default temperature is \(f.temperature)° Fahrenheit")
-
 
 struct Celsius {
     var temperatureInCelsius: Double
@@ -93,5 +51,6 @@ i1 = 6
 println(i2)
 
 
-
-
+let arr1 = [1, 2, 4]
+let arr2 = [4, 7]
+let arr3 = arr1 + arr2
