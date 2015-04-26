@@ -2,9 +2,12 @@
 # export SCRIPT_PATH="/Users/hcao/github/playground/scripts"
 # . ${SCRIPT_PATH}/aliases.sh
 
+export HISTSIZE=99
+export LANG=zh_CN.UTF-8
 
 alias a='alias'
-alias h='history'
+alias ll='ls -lta'
+alias h='history 44'
 alias e1='vi $SCRIPT_PATH/aliases.sh'
 alias e2='vi ~/.bash_profile'
 alias hpawk='open https://developer.apple.com/library/mac/documentation/OpenSource/Conceptual/ShellScripting/Howawk-ward/Howawk-ward.html#//apple_ref/doc/uid/TP40004268-TP40003518-SW10'
