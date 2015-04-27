@@ -1,5 +1,7 @@
 # export BAIDU="/Users/hcao/BaiDuPan/LPSync"
+# export RAR_PREFIX="LearnHome"
 # export SCRIPT_PATH="/Users/hcao/github/playground/scripts"
+# export RAR_PASS=x
 # . ${SCRIPT_PATH}/aliases.sh
 
 export HISTSIZE=99
@@ -9,7 +11,7 @@ alias a='alias'
 alias ll='ls -lta'
 alias h='history 44'
 alias e1='vi $SCRIPT_PATH/aliases.sh'
-alias e2='vi ~/.bash_profile'
+alias e2='vi ~/.bashrc'
 alias hpawk='open https://developer.apple.com/library/mac/documentation/OpenSource/Conceptual/ShellScripting/Howawk-ward/Howawk-ward.html#//apple_ref/doc/uid/TP40004268-TP40003518-SW10'
 alias hpsh='open https://www.gnu.org/software/bash/manual/bash.html'
 alias r='. ~/.bash_profile'
@@ -32,4 +34,25 @@ gf() {
         print $1;
       }
     }';
+}
+
+unset -f bk
+bk() {
+  if [[ $BAIDU == "" ]]; then echo BAIDU Pan is not specified; fi
+  local name=$(ls -lt $BAIDU/$RAR_PREFIX* | awk '
+    {
+      if (NR=1) {
+        print $9;
+      }
+    }
+  ')
+  local curdir=$( cd "$( dirname "${BASH_SOURCE[1]}" )" && pwd )
+  echo $name
+  echo $curdir
+  cp $name $curdir
+  mv $curdir/LearnHome*.rar $curdir/LearnHome.rar
+  unrar x -p$RAR_PASS LearnHome.rar Learn LastFoot ./OK/
+  /Applications/Beyond\ Compare.app/Contents/MacOS/BCompare "daily"
+  rm -r -f OK
+  rm LearnHome.rar
 }
