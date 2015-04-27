@@ -38,21 +38,25 @@ gf() {
 
 unset -f bk
 bk() {
-  if [[ $BAIDU == "" ]]; then echo BAIDU Pan is not specified; fi
+  declare -a NAMES
+  NAMES=('BAIDU' 'RAR_PREFIX' 'RAR_PASS')
+  for n in ${NAMES[@]}; do
+    if [[ ${!n} == "" ]]; then echo $n is not defined; sleep 1800; return; fi
+  done
   local name=$(ls -lt $BAIDU/$RAR_PREFIX* | awk '
     {
-      if (NR=1) {
+      if (NR==1) {
         print $9;
       }
     }
   ')
   local curdir=$( cd "$( dirname "${BASH_SOURCE[1]}" )" && pwd )
-  echo $name
+  if [[ $name == "" ]]; then echo No expected file name found; sleep 1800; return; fi
   echo $curdir
   cp $name $curdir
-  mv $curdir/LearnHome*.rar $curdir/LearnHome.rar
-  unrar x -p$RAR_PASS LearnHome.rar Learn LastFoot ./OK/
+  mv $curdir/$RAR_PREFIX*.rar $curdir/$RAR_PREFIX.rar
+  unrar x -p$RAR_PASS $curdir/$RAR_PREFIX.rar Learn LastFoot $curdir/OK/
   /Applications/Beyond\ Compare.app/Contents/MacOS/BCompare "daily"
-  rm -r -f OK
-  rm LearnHome.rar
+  rm -r -f $curdir/OK
+  rm $curdir/$RAR_PREFIX.rar
 }
