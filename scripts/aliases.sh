@@ -24,6 +24,7 @@ alias hpsh='open https://www.gnu.org/software/bash/manual/bash.html'
 alias r='. ~/.bash_profile'
 alias gs='git status'
 alias gd='git diff'
+alias gp='git pull'
 alias gc='git commit -m'
 
 unset -f gf
@@ -111,7 +112,7 @@ command_not_found_handle() {
     echo Redirect to \"d ${BASH_REMATCH[1]}\" 
     d ${BASH_REMATCH[1]}; 
   else 
-    echo $1 - command not found
+    echo $1 - command not found / Hongfei Cao
     return 127
   fi
 }
