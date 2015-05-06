@@ -27,6 +27,7 @@ alias gs='git status'
 alias gd='git diff'
 alias gp='git pull'
 alias gc='git commit -m'
+alias dbh='ssh -t huangshan "mysql -u gcapp -p"'
 
 unset -f gf
 gf() { 
