@@ -29,6 +29,9 @@ alias gd='git diff'
 alias gp='git pull'
 alias gc='git commit -m'
 alias dbh='ssh -t huangshan "mysql -u gcapp -p"'
+alias dbc='ssh -t changbaishan "mysql -u gcapp -p"'
+alias gw='gradle war'
+alias gcp='gradle copyDependencies'
 
 unset -f gf
 gf() { 
