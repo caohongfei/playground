@@ -23,6 +23,7 @@ alias hpawk='open https://developer.apple.com/library/mac/documentation/OpenSour
 alias hpsh='open https://www.gnu.org/software/bash/manual/bash.html'
 alias hpguava='open https://code.google.com/p/guava-libraries/wiki/GuavaExplained'
 alias hpnet='open https://developer.apple.com/library/ios/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/CommonPitfalls/CommonPitfalls.html'
+alias hpswift='open http://swiftdoc.org/'
 alias r='. ~/.bash_profile'
 alias gs='git status'
 alias gd='git diff'
