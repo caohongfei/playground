@@ -34,6 +34,7 @@ alias dbc='ssh -t changbaishan "mysql -u gcapp -p"'
 alias gw='gradle war'
 alias gcp='gradle copyDependencies'
 alias gstat='/Users/hcao/Documents/gitinspector-0.3.2/gitinspector/gitinspector.py -f java,c,cpp,h,hpp,py,glsl,rb,js,sql,html,css'
+alias pjs='$PJS_HOME/bin/phantomjs'
 
 unset -f gf
 gf() { 
