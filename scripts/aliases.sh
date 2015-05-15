@@ -41,7 +41,7 @@ gf() {
     BEGIN {
       i = 0;
     }
-    $0 ~ pattern { 
+    tolower($0) ~ pattern {
       if (i == 0) {
         printf "%s", $1 | "/usr/bin/pbcopy"; print $1, "[37;40m--- copied to clipboard[0m"; 
         i ++;
