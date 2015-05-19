@@ -83,7 +83,7 @@ function formatDate(date) {
 var configurations = [
     {
         identifier: 1,
-        name: "GNC Triple Fish Oil",
+        name: "GNC三倍鱼油",
         url: "http://www.gnc.com/GNC-Triple-Strength-Fish-Oil-1500/product.jsp?productId=12643679",
         selector: ".product-price.product-sprite .now, .product-promos.product-sprite",
         timeout: 40,    //seconds
@@ -94,7 +94,7 @@ var configurations = [
     },
     {
         identifier: 2,
-        name: "Laoshan Bee",
+        name: "老山冻干粉",
         url: "http://detail.tmall.com/item.htm?spm=a1z10.1-b.w8171270-9438708950.55.zZhz6k&id=14943725766",
         selector: ".tm-promo-price .tm-price, .tm-shopPromotion-title.tm-gold",
         timeout: 20,
@@ -102,6 +102,17 @@ var configurations = [
         alreadyHasJQ: false,
         useProxy: false,
         interval: 30    //minutes
+    },
+    {
+        identifier: 3,
+        name: "新浪头条",
+        url: "http://news.sina.com.cn/",
+        selector: ".ct_t_01:first h1:first",
+        timeout: 20,
+        loadImages: false,
+        alreadyHasJQ: true,
+        useProxy: false,
+        interval: 5    //minutes
     }
 ];
 
