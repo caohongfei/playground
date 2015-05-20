@@ -143,7 +143,7 @@ function checkOneConfiguration(task) {
         phantom.setProxy("localhost", "1080", "socks5");
     }
     else {
-        phantom.setProxy(null);
+        phantom.setProxy("");
     }
     var page = require('webpage').create();
     page.settings.loadImages = config.loadImages;
@@ -218,9 +218,10 @@ function checkOneConfiguration(task) {
             result.text = result.text.replace(/[\t]+/g, "").replace(/[\r\n]+/g, "\n").trim();
             page.render(config.name + ".png");
             addRecord(result);
+            var intervalToNextTry = result.emptyText ? Math.min(5, config.interval) : config.interval;  //If this try failed to get any text, try it sooner
             setTimeout(function() {
                 createTask(config);
-            }, config.interval * 60 * 1000);
+            }, intervalToNextTry * 60 * 1000);
             task.completed = true;
             console.log((result.text ? result.text : "'EMPTY'") + "\n");
         }
