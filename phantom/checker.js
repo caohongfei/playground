@@ -26,14 +26,11 @@ String.prototype.format = function() {
 //Instead, setInterval() will just trigger the execution periodically
 Function.prototype.repeat = function (interval) {
     var __method = this, args = Array.prototype.slice.call(arguments, 1);
-    function call() {
-        f();
-    }
     function f() {
         __method.apply(__method, args);
-        setTimeout(call, interval);
+        setTimeout(f, interval);
     }
-    call();
+    f();
 };
 
 Function.prototype.wait = function (interval, maximum, runAtOnce) {
@@ -70,10 +67,11 @@ function waitFor(testFx, onReady, timeOutMillis) {
         }, 250); //< repeat check every 250ms
 }
 
+function padding(num) {
+    return num < 10 ? "0" + num : String(num);
+}
+
 function formatDate(date) {
-    function padding(num) {
-        return num < 10 ? "0" + num : String(num);
-    }
     var day = date.getDate();
     var monthIndex = date.getMonth();
     var year = date.getFullYear();
@@ -146,7 +144,7 @@ function checkOneConfiguration(task) {
         phantom.setProxy("");
     }
     var page = require('webpage').create();
-    page.settings.loadImages = config.loadImages;
+    page.settings.loadImages = true;    //to avoid memory not releasing issue, images must be loaded
     page.settings.userAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36";
     //time out checking
     var isFinished = false; //success and fail are both "finished"
@@ -224,6 +222,9 @@ function checkOneConfiguration(task) {
             }, intervalToNextTry * 60 * 1000);
             task.completed = true;
             console.log((result.text ? result.text : "'EMPTY'") + "\n");
+            //the following two statements are to avoid huge memory consumption
+            page.close();
+            page.clearMemoryCache();
         }
     });
 }
