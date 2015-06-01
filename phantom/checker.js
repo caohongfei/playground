@@ -103,14 +103,14 @@ var configurations = [
     },
     {
         identifier: 3,
-        name: "新浪头条",
-        url: "http://news.sina.com.cn/",
-        selector: ".ct_t_01:first h1:first",
+        name: "上海天气",
+        url: "http://www.weather.com.cn/weather/101020100.shtml",
+        selector: "#7d [data-dn=7d1], #7d [data-dn=7d2]",
         timeout: 20,
         loadImages: false,
         alreadyHasJQ: true,
         useProxy: false,
-        interval: 5    //minutes
+        interval: 25    //minutes
     }
 ];
 
@@ -252,3 +252,4 @@ for (var i = 0; i < configurations.length; i++) {
 }
 
 scheduleTasks.repeat(500);  //Pick up a task every 0.5s
+
