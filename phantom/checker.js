@@ -111,6 +111,17 @@ var configurations = [
         alreadyHasJQ: true,
         useProxy: false,
         interval: 25    //minutes
+    },
+    {
+        identifier: 4,
+        name: "Natural Made",
+        url: "http://www.amazon.com/Nature-Made-Omega-3-1200mg-Softgels/dp/B0029O0BYU/ref=sr_1_4?ie=UTF8&qid=1422948466&sr=8-4&keywords=nature+made+fish+oil+1200+mg+180+softgels",
+        selector: "#priceblock_ourprice_row .a-span12",
+        timeout: 40,
+        loadImages: false,
+        alreadyHasJQ: true,
+        useProxy: false,
+        interval: 30    //minutes
     }
 ];
 
@@ -213,7 +224,10 @@ function checkOneConfiguration(task) {
         }
 
         function end() {
-            result.text = result.text.replace(/[\t]+/g, "").replace(/[\r\n]+/g, "\n").trim();
+//            result.text = result.text.replace(/[\t]+/g, "").replace(/[\r\n]+/g, "\n").trim();
+            result.text = result.text.replace(/[\s]+/g, function(matched) {
+                return matched.match(/[\r\n]/) ? "\n" : " ";
+            }).trim();
             page.render(config.name + ".png");
             addRecord(result);
             var intervalToNextTry = result.emptyText ? Math.min(5, config.interval) : config.interval;  //If this try failed to get any text, try it sooner
