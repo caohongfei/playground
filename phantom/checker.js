@@ -122,6 +122,28 @@ var configurations = [
         alreadyHasJQ: true,
         useProxy: false,
         interval: 30    //minutes
+    },
+    {
+        identifier: 5,
+        name: "京东 道达尔(TOTAL) 快驰7000 4L",
+        url: "http://item.jd.com/736879.html",
+        selector: "#jd-price",
+        timeout: 40,
+        loadImages: false,
+        alreadyHasJQ: true,
+        useProxy: false,
+        interval: 360    //minutes
+    },
+    {
+        identifier: 6,
+        name: "京东 道达尔(TOTAL) 快驰7000 1L",
+        url: "http://item.jd.com/849744.html",
+        selector: "#jd-price",
+        timeout: 40,
+        loadImages: false,
+        alreadyHasJQ: true,
+        useProxy: false,
+        interval: 360    //minutes
     }
 ];
 
@@ -131,17 +153,33 @@ var records = [];
 
 function addRecord(result) {
     records.push(result);
-    var lastRecord;
-    for (var i = records.length - 2; i >= 0; i--) {
+
+    //whether it's 3rd consecutive error
+    var latestResult = [], latestNonEmptyInfo = null;
+    for (var i = records.length - 1; i >= 0; i--) {
         if (records[i].identifier === result.identifier) {
-            lastRecord = records[i];
-            break;
+            if (latestResult.length < 3) {
+                latestResult.push(records[i]);
+            }
+            if (!latestNonEmptyInfo && records[i].text && i !== records.length - 1) {
+                latestNonEmptyInfo = records[i].text;
+            }
+            if (latestResult.length >= 3 && latestNonEmptyInfo) {
+                break;
+            }
         }
     }
-    if (!lastRecord || lastRecord.text !== result.text) {
+    var message = null;
+    if (latestResult.length === 3 && !latestResult[0].text && !latestResult[1].text && !latestResult[2].text) {
+        message = "Failed to get '$1' three times, the latest known is:\n$2".format(result.name, latestNonEmptyInfo ? latestNonEmptyInfo : "Unknown");
+    }
+    else if (result.text && result.text !== latestNonEmptyInfo) {
+        message = "$1 changed from\n\n$2\n\nto\n\n$3".format(result.name, latestNonEmptyInfo ? latestNonEmptyInfo : "EMPTY", result.text)
+    }
+    if (message) {
         var process = require("child_process");
         var spawn = process.spawn;
-        spawn("osascript", ["-e", 'tell app "System Events" to display dialog "$1 changed from\n\n$2\n\nto\n\n$3"'.format(result.name, lastRecord ? lastRecord.text : "EMPTY", result.text)]);
+        spawn("osascript", ["-e", 'tell app "System Events" to display dialog "$1"'.format(message)]);
     }
 }
 
