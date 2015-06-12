@@ -144,7 +144,18 @@ var configurations = [
         alreadyHasJQ: true,
         useProxy: false,
         interval: 360    //minutes
-    }
+    }/*,
+    {
+        identifier: 7,
+        name: "一号店 SanmiuSunflower新苗向日葵饼干 乳酪味夹心 700g 菲律宾进口",
+        url: "http://item.yhd.com/item/7866315",
+        selector: "#currentPriceArea #current_price",
+        timeout: 40,
+        loadImages: false,
+        alreadyHasJQ: true,
+        useProxy: false,
+        interval: 180    //minutes
+    }*/
 ];
 
 var tasks = [];

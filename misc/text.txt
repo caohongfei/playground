@@ -1,0 +1,1476 @@
+Flagships, Feeders, and the Texas Top 10% Law: A Test of the "Brain Drain" Hypothesis
+Author(s): Marta Tienda and Sunny Xinchun NiuSource: The Journal of Higher Education, Vol. 77, No. 4 (Jul. - Aug., 2006), pp. 712-739Published by: Ohio State University PressStable URL: http://www.jstor.org/stable/3838713 .Accessed: 25/03/2014 09:44Your use of the JSTOR archive indicates your acceptance of the Terms & Conditions of Use, available at .http://www.jstor.org/page/info/about/policies/terms.jsp .JSTOR is a not-for-profit service that helps scholars, researchers, and students discover, use, and build upon a wide range ofcontent in a trusted digital archive. We use information technology and tools to increase productivity and facilitate new formsof scholarship. For more information about JSTOR, please contact support@jstor.org. .Ohio State University Press is collaborating with JSTOR to digitize, preserve and extend access to The Journalof Higher Education.http://www.jstor.org
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+Marta Tienda
+Sunny Xinchun Niu
+Flagships, Feeders, and the Texas
+Top 10% Law: A Test of the
+"Brain Drain" Hypothesis
+Affirmative action came under assault during the
+mid 1990s with the passage of Proposition 209 in California, the 1996
+Hopwood v. University of Texas decision in Texas, and the enactment of
+Initiative 200 in Washington. In response to the judicial ban on the use
+of race-sensitive criteria in college admissions decisions, in 1997 the
+Texas legislature passed H.B. 588-popularly known as the top 10%
+law-guaranteeing automatic admission to any public university to high
+school students who graduate in the top decile of their class (Texas
+Higher Education Coordinating Board [THECB], 1998). Building on extensive
+empirical evidence that high school grades are strong predictors
+of college success (Bowen & Bok, 1998) and the philosophical principle
+of equal educational opportunity (Coleman, 1990; Jencks, 1988), the architects
+of H.B. 588 sought to maintain the hard-won ethno-racial diversity
+at the public flagship universities.
+The top 10% law changed the terms of the debate about merit and access
+to the state's most selective public institutions. Affirmative action
+was criticized for privileging allegedly underqualified minority students
+for admission to the most competitive postsecondary institutions; the top
+10% law is criticized for giving students from underperforming schools
+this unfair advantage (Flores, 2003; Glater, 2004; Nissimov, 2003). In
+This research was supported by grants from the Ford, Mellon, and Hewlett Foundations.
+We gratefully acknowledge institutional support from the Office of Population Research,
+Princeton University.
+Marta Tienda is Maurice P. During '22 Professor in Demographic Studies and Professor
+of Sociology at Princeton University. Sunny Xinchun Niu is Research Associate in
+the Office of Population Research at Princeton University.
+The Journal of Higher Education, Vol. 77, No. 4 (July/August 2006)
+Copyright ? 2006 by The Ohio State University
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+Testing the "Brain Drain" Hypothesis 713
+effect, the terms of exclusion changed from members of minority groups
+(Blacks and Hispanics, specifically) to underperforming schools.
+Notwithstanding the appeal of a merit-based admission policy that is
+applied uniformly across high schools, H.B. 588 has become as controversial
+as the race-sensitive admission regime it replaced (Flores, 2003;
+Glater, 2004; Nissimov, 2000). Many salutary consequences have played
+themselves out, but so too have unanticipated difficulties. On the positive
+side of the ledger, early results indicated that the law had some capacity
+to restore ethno-racial diversity at the state's public flagships
+(Tienda, Leicht, Sullivan, Maltese, & Lloyd, 2003; University of Texas
+Office of Public Affairs [UTOPA], 2003; Walker & Lavergne, 2001).
+Additional benefits include greater geographic diversity of incoming
+students (Montejano, 2001), stronger institutional ties between secondary
+schools and the public flagships via expanded outreach efforts
+(Goodman, 2003), and additional evidence that class rank is a more reliable
+predictor of college success than are standardized test scores
+(Faulkner, 2000, 2002; Glater, 2004; Rooney, 1998; Walker & Lavergne,
+2001). When the outcome of the Michigan litigation (Grutter v.
+Bollinger, 2003; Gratz v. Bollinger, 2003) was uncertain, these promising
+early results were widely celebrated.
+On the negative side of the ledger, most concerns center on institutional
+saturation with top decile graduates and growing anxiety that
+graduates from highly competitive high schools are "squeezed out" of
+the public flagships. As the demand for access to the public flagships
+surged, admission rates fell for students ranked below the top decile
+(Jayson, 2003a; THECB, 2003). In 1996, the year of the Hopwood decision,
+about 43-44% of freshmen enrollees at the University of Texas at
+Austin (UT) and Texas A&M (A&M) ranked in the top decile of their senior
+class. Three years later, this share rose modestly to 47% and 51%,
+respectively, at these institutions.l Although the share of students automatically
+admitted to A&M reached a plateau just over 50%, at UT the
+number of top decile applicants continued to rise such that 70% of the
+applicants during 2003-2004 qualified for automatic admission (Jayson,
+2003b; Lavergne & Walker, 2003; Nissimov, 2003; THECB, 2003;
+Wolfson, 2004).
+Predictably, institutional saturation with automatically admitted students
+triggered discontent among a highly vocal constituency, namely
+graduates from academically competitive high schools with strong college-
+going traditions who did not graduate in the top decile of their senior
+class (Nissimov, 2000; Yardley, 2002).2 Several prominent critics of
+H.B. 588, including Texas Governor Rick Perry (Wolfson, 2004), argued
+that the "best and brightest" are leaving the state-a "brain drain" of
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+714 The Journal of Higher Education
+sorts-in response to "crowding out" of second decile students from
+competitive high schools by top 10% admissions from low-performing
+high schools. As the saturation of UT applicants with top 10% graduates
+surpassed 70%, opponents of H.B. 588 called for its rescission on
+grounds that its negative consequences outweighed the early benefits
+and that the 2003 Supreme Court ruling in Grutter v. Bollingerno longer
+justified the top 10% law (Flores, 2003; Glater, 2004; Irving, 2004;
+Nissimov, 2003).
+The "brain drain" hypothesis, which we evaluate empirically, maintains
+that high-achieving students who graduate from competitive secondary
+schools but fail to qualify for automatic admission to one of the
+public flagships leave the state for college. Virtually all the evidence supporting
+such claims derives from anecdotes about disgruntled students
+rather than from a rigorous evaluation of college choice under the uniform
+admission regime. Therefore, to evaluate the "brain drain" hypothesis
+empirically, we address three questions about college choice using a
+representative sample of Texas high school seniors whose admissions
+were governed by H.B. 588. First, how does type of high school attended
+influence seniors' college preferences for and enrollment in a Texas versus
+non-Texas postsecondary institution? Second, how do college preferences
+and enrollment decisions differ by school type for top decile graduates?
+Finally, is there evidence that second decile students who
+graduate from the most competitive public high schools leave the state
+because they are crowded out of the two flagships?
+In addition to testing the "brain drain" hypothesis, our findings are theoretically
+important for the philosophical debate about what must be
+equal for educational opportunity to be equal; and they are practically
+relevant for the national debate about the prospects for devising race-neutral
+admissions standards. President George W. Bush cited percent plans,
+and the Texas plan in particular, as viable alternatives to race-conscious
+admissions in the White House brief filed on behalf of Grutter and Gratz
+(Jones Olson, Boyd, Clement, & Salmons, 2002a, 2002b). In the wake of
+the Grutter decision, which permits a narrowly tailored consideration of
+race in college admissions, the declared successes of the Texas percent
+plan invigorated opponents of affirmative action to reassert the value of
+percent plans as a race-neutral alternative to affirmative action.
+In what follows, we first develop a classification scheme that characterizes
+high schools according to their relative affluence and collegegoing
+traditions. Subsequently, we formulate a strategy to test the "brain
+drain" hypothesis empirically. We conclude with a brief summary of the
+main findings and a discussion of the broader implications of the Texas
+experience for the nation as a whole.
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+Testing the "Brain Drain" Hypothesis 715
+The Top 10% Law Highlights
+Under the top 10% law, top decile students qualify for automatic admission
+to any public postsecondary institutions in Texas, but qualifying
+students must complete the university's application (including essays)
+and a college entrance exam (either SAT or ACT). Test scores are not
+considered in the admission decision or in course placement.3 In Texas,
+class rank is reported by the students' high schools, not by the university
+systems, as in California. The admission guarantee is good for two years
+following graduation, provided that students do not register at another
+college (Leicht & Sullivan, 2000). Students who do not qualify for the
+admission guarantee are admissible, within the bounds of institutional
+carrying capacity, based on their overall academic record.4
+For students who do not graduate in the top 10% of their class, student
+merit is based on a broad range of objective and subjective criteria, including
+standardized test scores, completion of required high school
+curriculum, scores on two essays, demonstrated leadership qualities, extracurricular
+activities, region of residence, school characteristics,
+awards/honors, work experience, public service, and special circumstances
+(such as socioeconomic status, family responsibilities, and
+school conditions, among others) (Walker & Lavergne, 2001, p. 20). Our
+multivariate models consider such factors in evaluating the "brain drain"
+hypothesis.
+If the Texas top 10% plan appears to be a radical change in admissions
+policy, it is not, in fact. Class rank always has been seriously considered
+and heavily weighed in admissions decisions at the public flagships. In
+fact, before 1995, students graduating in the top decile of their class
+were automatically admitted to the University of Texas at Austin
+(Walker & Lavergne, 2001).5 What is "new" about the Texas college admissions
+policy is the explicit de-emphasis of test scores for students
+who graduate in the top decile of their class, and the explicit prohibition
+of considering race and ethnicity in decisions.
+Data
+Evaluating the merits of the "brain drain" hypothesis requires a statistically
+representative sample of senior high students across a range
+of secondary schools and information about their ranked college preferences
+and eventual enrollment decisions. The survey data collected
+under the auspices of the Texas Higher Education Opportunity Project
+(THEOP) meets these requirements. In spring 2002, a representative
+sample of Texas public high school seniors was surveyed (wave 1) and
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+716 The Journal of Higher Education
+a random subsample of the senior cohort was reinterviewed (wave 2)
+the following spring. The baseline sample was drawn using a two-stage
+stratified sampling design. In the first stage, 62 primary sampling units
+(PSUs) were randomly chosen to represent the high school-age population
+in Texas. For the second stage, 108 public high schools were
+randomly drawn from the universe of secondary schools that included
+both 10th and 12th grades and had a senior class of 10 or more
+students.6
+From the sampled high schools, 13,803 seniors were interviewed
+using a paper and pencil in-class survey instrument. For cost reasons,
+only a subsample of 5,800 seniors, or about 42% of the original sample,
+were reinterviewed one year after high school graduation. To guarantee
+the maximum possible precision for Blacks and Asians, all baseline respondents
+from these groups were included in the longitudinal sample;
+proportionate samples of Hispanics and non-Hispanic Whites were randomly
+drawn for the sample balance. Weights ensure representativeness
+of the sample to the population of Texas high school seniors in 2002.
+The response rate for the wave 2 interviews was 70%, and sample
+weights for the follow-up interviews were recalibrated to the original
+population. The major strength of the longitudinal survey design is that
+it avoids selection biases inherent in other studies by asking students'
+college preferences prospectively rather than retrospectively. In addition
+to basic demographic, socioeconomic, and standard tracking information,
+the baseline survey included a battery of questions about
+college plans, including up to five rank-ordered college preferences,
+whether applications were submitted, and the admission decisions.
+The first follow-up survey (wave 2) recorded whether respondents actually
+enrolled in college one year after high school graduation, and if
+so, where.
+All colleges in students' choice sets-both their stated preferences in
+the baseline survey and their enrollment institutions-were assigned Integrated
+Postsecondary Education Data System (IPEDS) codes. This
+permits appending college characteristics to individual records, which is
+necessary to classify preferences and enrollment decisions by institutional
+type (e.g., junior college, four-year public or private university,
+etc.) and selectivity of admissions (Niu, Tienda, & Cortes, 2006). Using
+a database maintained by the Texas Education Agency, we also appended
+high school attributes to individual student records in the baseline
+survey. This information allows us to derive a classification scheme
+of secondary schools according to their socioeconomic status and college-
+going traditions.
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+Testing the "Brain Drain" Hypothesis 717
+College Preferences and Enrollment Decisions
+Because the "brain drain" hypothesis is about the barriers that hinder
+students' access to the public flagships, we examine students' first college
+preference and their actual enrollment decision to determine who
+succeeded in realizing their college goals. Specifically, we classify students'
+first college choice into six categories: (a) no college; (b) UT or
+A&M; (c) other Texas four-year institutions; (d) Texas two-year institutions;
+(e) non-Texas two- or four-year institutions; and (f) unspecified
+preference. Enrollment decisions use these same categories without the
+unspecified preference. Other selective public institutions, such as Texas
+Tech, University of Houston, and University of Texas at Dallas, also recruit
+students from competitive high schools who wish to remain in
+cities, but the "brain drain" hypothesis is mostly focused on crowding
+out of second decile graduates from the public flagships. Hence we focused
+on UT and A&M.
+Class Rank and High School Type
+The two primary individual attributes for testing the "brain drain" hypothesis
+are students' class rank and the type of high school attended.
+Self-reported class rank, measured in deciles, is either known to students
+or estimated by them when unknown. Rank can be based on coursework
+completed either during spring semester of the junior year, or fall or
+spring of the senior year, depending on the semester of application. This
+partly explains why almost 20% of the college choice sample is ranked
+as top decile graduates, but there is also a known upward bias in self-reported
+class rank.7
+To portray socioeconomic variation among secondary schools, we devised
+a typology that differentiates resource-poor and affluent high
+schools from those of average resources. Among affluent high schools,
+we further distinguished between those with low and high college-going
+traditions. Feeder high schools are a subset of the affluent schools with
+very strong college-going traditions, including large numbers who historically
+attended the two public flagships. Operationally, feeder high
+schools are the top 20 high schools based on the absolute number of students
+admitted to UT and A&M in 2000 (Tienda et al., 2003). At A&M,
+the top 20 feeder high schools accounted for 15% of students admitted
+in 2000, and 14% of enrolled freshmen. For UT, the corresponding figures
+are both 23%. Because of the considerable overlap between the
+two sets, the combined list of feeder schools represent only 28 high
+schools out of a possible 1,644 public high schools in 2000 (Texas Education
+Agency [TEA], 2001). Survey results reveal that feeder and other
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+718 The Journal of Higher Education
+affluent schools are located in suburban areas around major cities in the
+eastern part of the state. Not surprisingly, about two thirds of feeder
+school graduates have college-educated parents and the vast majority
+live in owned rather than rented homes.
+Among the resource-poor high schools, we distinguished between
+those with low college-going traditions that have been targeted by UT
+and A&M to receive Longhorn or Century scholarships, and other poor
+schools.8 These two scholarship programs were designed to enable top
+decile students who attend schools with high shares of economically disadvantaged
+students to enroll at the public flagships. Approximately one
+third of seniors from resource-poor schools live with parents lacking a
+high school education. Our five-category classification scheme enables
+us to compare "feeder" high schools (as defined above), other affluent
+schools, resource-poor schools, and poor schools designated for Longhorn
+or Century scholarship awards with a residual category that represents
+typical Texas high schools as of 2002.
+Table 1 provides an overview of college preference and enrollment decisions
+among Texas public high school seniors in 2002. First, nearly
+three fourths of all high school graduates pursue some form of postsecondary
+education. Second, college intentions and enrollment rates are
+substantially higher among top decile graduates-over 90% report postsecondary
+plans and actually enroll within a year of leaving high school.
+Third, (non-flagship) four-year Texas public colleges and universities are
+the modal college choice, as over one third of 2002 high school graduates
+designated such institutions as their first preference. Fourth, one in three
+top decile graduates indicated one of the flagships as their first preference
+and actually enrolled there within a year of high school graduation.
+Not surprisingly, feeder high school students have a very strong preference
+for both the public flagships and non-Texas institutions. This is
+especially so for the top 10% graduates, who are quite successful in realizing
+their enrollment goals (Niu et al., 2006). Specifically, over one
+third of feeder high school students who graduated in the top 10% of
+their class named UT or A&M as their first college choice and almost
+two thirds of these actually enrolled at one of the flagships. For second
+decile feeder high school graduates, the corresponding shares are 43%
+and 47%.
+Estimation Strategies
+To estimate how individual characteristics determine college decision-
+making, the recent college choice literature uses the multinomial
+logit model (Manski & Wise, 1983). We also use this approach to exam-
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+TABLE 1
+1st College Preference and Actual Enrollment: Texas College Bound/Going Public High School Seniors in 2002 by School 1stC ollegeP referencAe mongC ollege-Bound
+%C ollegeB ound UT/A&M OtherT X 4-Yr TX 2-Yr All Seniors
+Feeder 89 23 33 4 Resource-Affluent 79 15 34 14 Average 74 13 37 19 Resource-Poor 74 7 46 19 Longhorn/Century 63 8 39 19 Total 75 13 37 16 Top 10%
+Feeder 97 36 20 0 Resource-Affluent 97 39 29 4 Average 95 31 38 5 Resource-Poor 91 18 53 9 Longhorn/Century 84 21 45 8 Total 94 31 36 5 Second Decile
+Feeder 96 43 20 7 Resource-Affluent 92 22 46 9 Average 87 13 46 17 Resource-Poor 87 10 50 18 Longhorn/Century 80 6 48 17 Total 88 17 44 13 This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+TABLE (Continued)
+1st College Preference and Actual Enrollment: Texas College Bound/Going Public High School Seniors in 2002 by School CollegeE nrolledA mongC ollege-Going
+%C ollegeG oing UT/A&M OtherT X 4-Yr TX 2-Yr All Seniors
+Feeder 88 23 43 17 Resource-Affluent 76 13 34 43 Average 73 10 38 44 Resource-Poor 67 5 47 46 Longhorn/Century 61 6 29 58 Total 73 12 37 43 Top 10%
+Feeder 93 64 10 4 Resource-Affluent 97 41 32 13 Average 97 35 42 11 Resource-Poor 85 17 69 10 Longhorn/Century 80 22 40 25 Total 93 36 39 12 Second Decile
+Feeder 90 47 27 3 Resource-Affluent 78 17 43 31 Average 87 9 49 33 Resource-Poor 76 6 50 40 Longhorn/Century 82 3 30 61 Total 83 14 43 34 SOURCTEe:x asH igherE ducatioOn pportunitPyr ojectS, eniorW ave1 & 2 Data
+aCollegeB ound
+bCollegeG oing
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+Testing the "Brain Drain" Hypothesis 721
+ine how school type influences Texas high school seniors' college preference
+and enrollment decisions. Formally, the probability that student i
+chooses college category j is,
+eP(j)w(i)
+Prob(Yi jj = = ) (1)
+Xk eP(k)W(i)
+where k= l,.. ., 6 for first preference decisions, and k = 1, .. ,5 for enrollment
+decisions. In this formulation, W is the vector of student characteristics
+known to influence college choice, which includes gender,
+race/ethnicity, college orientation, class rank, parental education, home
+ownership, and several high school characteristics, including location
+and type according to our classification scheme (Karen, 2002; McDonough,
+1997). Appendix 1 provides the summary statistics for these covariates.
+Maximum likelihood estimation of coefficients 3(j) provide the
+marginal effect of individual characteristics on the probability of choosing
+college category j over the reference category, designated as Texas
+four-year postsecondary institutions other than UT or A&M.
+We first estimate model (1) for all students (controlling for class rank) to
+examinev ariationin college preferencesa nde nrollmentd ecisionsb y type of
+high school attended. We expect students from affluent schools with strong
+college-goingt raditionsw ill be more likely to choose one of the public flagships
+as their first preference and to enroll there the following fall. Furthermore,
+e xcept for a handfulo f privateu niversitiesi n Texas,p ostsecondaryin -
+stitutionsw ith admissions tandardsm ore selectivet hant he two flagshipsa re
+located outside the state. Therefore, we expect that graduates from affluent
+high schools will prefer and, conditional on admission, actually enroll in
+non-Texasi nstitutionsr elativet o less selectiveT exasa lternatives.
+To examine the influence of school type on college preferences and
+enrollment choices of high performing students, we estimate model (1)
+separately for the top and second decile graduates. Because H.B. 588
+guarantees automatic admission to any Texas public institution to all top
+10% graduates, we expect relatively uniform preferences and enrollment
+outcomes at the two flagships among top 10% students across high
+school types. Evidence that feeder high school students who graduate in
+the second decile of their class are more likely to enroll at non-Texas institutions
+than their rank counterparts who graduate from typical high
+schools does not constitute proof of a fostered "brain drain" because students
+may leave by choice. Fortunately, the THEOP survey allows us to
+examine whether students who enroll at non-Texas institutions do so because
+their preferred college is located out-of-state.
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+722 The Journal of Higher Education
+Information about ranked preferences is crucial for testing the "brain
+drain" hypothesis, which we evaluate using three empirical strategies.
+First, we estimate the multinomial logit model separately by school
+type, using top decile students as the reference group. Because top
+decile students are privileged with guaranteed admission to the Texas
+public flagships, their preference for and enrollment in a non-Texas institution
+serves as the benchmark for assessing whether lower-ranked
+students are crowded out. We assume that second decile students are not
+more likely to enroll out-of-state than their top decile counterparts are,
+which Table 1 supports. If second decile feeder high school graduates
+are more likely to prefer and enroll in a non-Texas institution than are
+their top decile statistical counterparts, this potentially signals a "brain
+drain" due to crowding. However, if they are less or equally likely both
+to prefer and to enroll at a non-Texas institution, evidence of "crowding
+out" is much weaker.
+Conceivably, second decile feeder high school graduates choose a
+non-Texas institution as their top preference because of their perceived
+lower admission chances at the public flagships. To consider this possibility,
+as a second empirical strategy we cross-examine first and second
+preferences among feeder high school students who graduate in the second
+decile of their class. Evidence that students whose first preference is
+one of the flagships actually name a non-Texas institution as their second
+preference potentially indicates a "brain drain." However, if second
+decile students whose first preference is a non-Texas institution name
+another non-Texas institution as their second choice, then the "brain
+drain" claims would appear to be groundless.
+Our third and final strategy to test the "brain drain" hypothesis is essentially
+a "reality check." Specifically, we investigate the likelihood
+that second decile feeder school graduates who prefer attending one of
+the flagships actually succeed in realizing their goal. Evidence that most
+of these students actually enroll at a non-Texas institution would support
+the "brain drain" hypothesis. However, if most of these students succeed
+in enrolling at one of the flagships, then claims that highly deserving
+students are being crowded out of Texas public institutions are empirically
+unfounded, media anecdotes notwithstanding.
+Findings
+Feeder School Students' Advantage
+Table 2 reports multinomial logit results for students' first preference
+and enrollment decisions, estimated separately for all seniors and for top
+and second decile graduates. The upper and lower panels report the influ-
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+Testing the "Brain Drain" Hypothesis 723
+ence of school type on first college preference and the enrollment
+decisions, respectively. Four years after H.B. 588 went into effect, graduates
+from feeder high schools retainedp referentiala ccess to the Texas flagships.
+Compared with graduates from typical Texas high schools, feeder
+high school graduates are 2.2 times as likely to prefer UT or A&M over
+other Texas four-year colleges and universities, but even more likely-3
+times as likely-to actually enroll at one of the public flagships the year
+following high school graduation. At the same time, they are 2.8 times as
+likely as the average graduate to prefer a non-Texas institution, but their
+odds of matriculatingo ut-of-statei s lower-only 2 times as likely.
+Graduatesf rom Longhorn/Centuryh igh schools are no more likely than
+are typical high school students to express a preference for and actually
+matriculate at UT or A&M relative to other four-year Texas institutions.
+Possibly because of heavy recruitment by admissions personnel, Longhor/
+Century high school seniors were 30% more likely to express a preference
+for an out-of-state institution over other Texas four-year institutions.
+That these students are no more likely to prefer a two-year college
+over a non-flagship four-year college, but are 60% more likely to matriculate
+there, attests to the persisting financial barriers to college access.
+Seniors from other resource-affluent high schools also enjoy preferential
+access to the two flagships, but to a lesser extent than do graduates
+from feeder high schools. However, students from resource-poor schools
+are clearly disadvantaged in their access to the two public flagships. Not
+only are they about half as likely to prefer UT or A&M over other Texas
+four-year institutions, but their odds of actually matriculating at one of
+these institutions is even lower-only about 40% as likely as graduates
+from typical Texas high schools. Contrary to claims proliferated in the
+print media, these results demonstrate that feeder high school students
+enjoy a substantial advantage in their access to the Texas flagships, even
+four years after H.B. 588 was put into effect.
+College Access for Top Decile Students
+Because H.B. 588 guarantees top 10% graduates admission to any
+Texas institution, there is much less variation in enrollment decisions by
+school type compared with preferences. Top 10% seniors from feeder
+high schools are twice as likely as their rank counterparts who graduate
+from typical Texas high schools to prefer attending one of the public
+flagships, but they have even stronger preferences-3.6 times as highfor
+out-of-state institutions compared with other Texas four-year institutions.
+Conditional on admission, their enrollment odds are equal across
+institutional types.
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+724 The Journal of Higher Education
+TABLE 2
+Relative Risk Ratios for 1st College Preference and Actual Enrollment by School Type: Texas Public
+High School Seniors, 2002a (Other 4-Year Texas Institution is Reference Category)
+High School Typeb and 1 st College Preference
+Class Rank Stratum No College UT/A&M TX 2-Yr Non-TX No Preference
+All Seniors
+Feeder 0.7** 2.2*** 0.4*** 2.8*** 1.0
+Resource-Affluent 0.8* 1.3** 0.7*** 1.5*** 1.1
+Resource-Poor 0.6*** 0.5*** 0.8* 0.5*** 0.7***
+Longhorn/Century 1.2* 0.8 0.9 1.3* 0.8
+Top 10% Graduates
+Feeder 1.9 2.1* 0.0 3.6*** 1.6
+Resource-Affluent 1.3 1.7** 0.5 2.1*** 1.8*
+Resource-Poor 1.0 0.4*** 1.4 0.5* 0.9
+Longhorn/Century 3.7*** 0.6 0.9 1.1 1.3
+Second 10% Graduates
+Feeder 0.9 3.9*** 0.3 4.4*** 1.2
+Resource-Affluent 0.5** 1.5* 0.3*** 1.4 1.1
+Resource-Poor 1.0 1.0 0.8 0.6 1.0
+Longhorn/Century 1.8* 1.4 0.8 1.7* 1.2
+College Enrollment
+Not Enrolled UVAM TX 2-Yr Non-TX
+All Seniors
+Feeder 0.3*** 3.0*** 0.5*** 2.0**
+Resource-Affluent 0.7** 1.5* 0.9 1.3
+Resource-Poor 0.8 0.4** 0.7* 0.3**
+Longhorn/Century 2.0*** 0.9 1.6*** 1.3
+Top 10% Graduates
+Feeder 1.7 2.3 0.9 2.3
+Resource-Affluent 1.5 1.4 0.9 1.5
+Resource-Poor 2.0 0.2*** 0.6 0.2*
+Longhorn/Century 4.8** 0.7 3.3** 0.9
+Second 10% Graduates
+Feeder 0.6 4.5*** 0.3 3.8**
+Resource-Affluent 0.6 1.5 0.7 1.2
+Resource-Poor 2.0 1.2 1.1 0.8
+Longhorn/Century 2.1* 1.7 2.9*** 1.8
+SOURCET:e xas Higher Education OpportunityP roject, Senior Wave 1 & 2 Data
+*** p<0.001 ** p<0.01 * p<0.05
+aModels include individual characteristics, socio-economic status, school charateristics and location.
+See Appendix 1.The model for all seniors also includes class rank.
+bTypical high school is reference category
+The comparable preference and enrollment odds at UT or A&M for top
+decile graduates from Longhorn/Century schools do not differ from students
+who graduate from typical Texas high schools. Top-ranked graduates
+from feeder high schools, other resource-affluent schools, and other
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+Testing the "Brain Drain" Hypothesis 725
+resource-poor high schools are as likely as graduates from typical high
+schools are to pursue two-year or non-college options. However, the results
+for Longhorn/Century schools reflect a strong selection process.
+Compared with top-ranked graduates from typical Texas high schools,
+top decile students who graduate from a Longhorn or Century high
+school are 3.7 times as likely to opt for no college, 4.8 times as likely not
+to enroll at any postsecondary institution, and 3.3 times as likely to enroll
+at a two-year Texas college. Top 10% graduates form Longhorn/Century
+high schools who both prefer and actually enroll at a four-year institution
+are a very selective subset of this high-performing pool. Thus, the seemingly
+equal enrollment probabilities among high-performing students
+across school types result because a large segment of the eligible pool
+from Longhorn/Centurys chools is effectively excluded.
+Top-ranked students from other resource-affluent schools share similar
+preferences to feeder high school graduates. However, their strong
+preferences for the public flagships and non-Texas institutions are
+equalized in their matriculation behavior, as they are equally as likely as
+their statistical counterparts who graduated from a typical Texas high
+school to enroll either at a Texas flagship or at a non-Texas institution.
+However, top-ranked graduates from resource-poor high schools are
+only 40% as likely to prefer and only 20% as likely to enroll at one of
+the public flagships.
+Second Decile Feeder School Graduates and the "Brain
+Drain" Hypothesis
+The last set of results in the upper and lower panels of Table 2 report
+high school variation in college choices of second decile studentsthose
+allegedly at high risk of being crowded out of competitive Texas
+colleges because of H.B. 588. Second decile graduates from feeder high
+schools have very strong preferences for both the Texas public flagships
+and non-Texas institutions. In fact, these students enjoyed preferential
+access to both institutional types. Compared with second decile students
+from typical Texas high schools, second decile feeder high school students
+are 3.9 times as likely to prefer one of the flagships over other
+four-year Texas institutions, and their matriculation odds are even
+higher-4.5 times as likely. Moreover, they are 4.4 times as likely as
+their rank counterparts who attend typical Texas high schools to prefer
+an out-of-state school to another four-year Texas institution, but their
+matriculation odds are slightly lower-3.8 times. Of course, their higher
+preferences for and enrollment odds at out-of-state institutions do not
+constitute prima facia evidence of a "brain drain" because they may actually
+prefer a non-Texas college, as we demonstrate below.
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+726 The Journal of Higher Education
+The college-going behavior of second decile feeder high school graduates
+is especially germane for assessing the extent to which qualified
+students who graduate from highly competitive high schools are
+"crowded out" of the public flagships. Table 3 reports multinomial logit
+results estimating the influence of class rank on first college preference
+and enrollment decisions among all seniors, and separately by high
+school type. The reference group is top decile students, whose decisions
+to leave the state serve as the benchmark for appraising a possible "brain
+drain." Results for all Texas graduates show that, on average, second
+decile students are less likely than top decile graduates are to prefer and
+to enroll at non-Texas institutions. Compared with top 10% students,
+they and second decile seniors from other resource-affluent schools
+probably lack the academic qualifications for admission to the most selective
+colleges and universities outside of Texas.
+However, this generalization does not apply to feeder high school
+graduates. In fact, seniors who graduate from feeder high schools ranked
+in the second 10% of their class are equally likely as their top decile
+counterparts to prefer and to enroll out of state. We suspect that the demanding
+curriculum and strong college-going traditions of these high
+schools enable second decile feeder high school students to compete for
+admission at the most selective colleges and universities outside Texas.
+This result is a vital test of the "brain drain" hypothesis. To confirm our
+interpretation, we examine the list of out-of-state institutions attended
+by second decile feeder high school graduates (Appendix 2). The list includes
+the most competitive private schools, such as the University of
+Southern California, Washington University in St. Louis, and Brigham
+Young University, as well as competitive state public institutions in
+neighboring states, such as the University of Oklahoma and the University
+of Colorado.
+Of course, it is also conceivable that second decile feeder high school
+graduates would be less likely to prefer and to enroll out-of-state in the
+absence of the top 10% law. In other words, owing to a perceived lower
+chance of admission to the public flagships, second decile graduates
+from feeder high schools who identify an out-of-state institution as their
+first preference may actually prefer to remain in Texas and attend either
+UT or A&M. To examine this possibility, Table 4 cross-classifies the
+first and second preferences for Texas college-bound high school seniors,
+providing more detailed breakdowns for feeder school graduates.
+Only about half of college-bound seniors report a second institutional
+preference, yet the cross-classification of first and second choices reveals
+a strong inclination for Texas high school graduates to remain in
+the state.
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+TABLE 3
+Relative Risk Ratios for 1st Preference and Actual Enrollment School Type and Class Rank: Texas
+Public High School Seniors, 2002a (Other 4-Year Texas Institution is Reference Category)
+High School Typeb and 1st College Preference
+Class Rank Stratum No College UT/A&M TX 2-Yr Non-TX No Preference
+All Seniors
+Second Decile 1.3 0.5*** 1.7*** 0.5*** 1.1
+Third Decile and Below 3.7*** 0.2*** 3.2*** 0.5*** 1.8***
+Feeder
+Second Decile 0.9 0.9 c 0.6 1.0
+Third Decile and Below 1.3 0.2*** c 0.3*** 1.3
+Resource-Affluent
+Second Decile 0.7 0.4*** 1.5 0.3*** 0.8
+Third Decile and Below 3.5*** 0.1*** 5.1*** 0.3*** 1.5*
+Average
+Second Decile 2.1** 0.4*** 2.1*** 0.5*** 1.2
+Third Decile and Below 6.8*** 0.2*** 3.1** 0.5*** 2.0***
+Resource-Poor
+Second Decile 1.8 0.7 1.5 0.5 1.7
+Third Decile and Below 4.7*** 0.3 2.7*** 0.5 1.8
+Longhorn/Century
+Second Decile 1.3 0.5* 1.9 1.0 1.2
+Third Decile and Below 2.7*** 0.3*** 3.4*** 0.8 1.7*
+College Enrollment
+Not Enrolled UVAM TX 2-Yr Non-TX
+All Seniors
+Second Decile 1.5** 0.3*** 2.0*** 0.5***
+Third Decile and Below 5.7*** 0.1*** 4.6*** 0.5***
+Feeder
+Second Decile 0.6 1.0 0.5 0.6
+Third Decile and Below 2.2 0.1*** 2.5 0.5
+Resource-Affluent
+Second Decile 0.7 0.4*** 1.9* 0.4**
+Third Decile and Below 3.6*** 0.1*** 5.9*** 0.5**
+Average
+Second Decile 2.3** 0.2*** 2.1*** 0.4**
+Third Decile and Below 10.2*** 0.0** 5.3*** 0.4***
+Resource-Poor
+Second Decile 2.1 0.4 5.0** 0.8
+Third Decile and Below 3.4** 0.1** 10.7*** 1.3
+Longhorn/Century
+Second Decile 1.6 0.2** 2.0* 0.9
+Third Decile and Below 6.9*** 0.0*** 3.6*** 0.9
+SOURCET:e xas Higher Education OpportunityP roject, Senior Wave 1 & 2 Data
+*p<0** p<0.01** p<* p<0.05
+aModels include individual characteristics, socio-economic status, school charateristics and location. See Appendix
+1.The model for all seniors also includes class rank.
+bTypical high school is reference category
+CCoefficientsa re too big to be meaningful due to the tiny numbero f top decile feeder school students who prefer
+a 2-year Texas institution.
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+728 The Journal of Higher Education
+TABLE 4
+Cross-Classification of 1st by 2nd College Preference: Texas College Bound Public High school
+Seniors, 2002 (in percent)
+2nd College Preference
+1 st College Preference UT/A&M Other TX 4-Yr TX 2-Yr Non-TX Unspecified N
+All Seniors
+UT/A&M 9 34 6 9 42 1296
+Other TX 4-Yr 7 33 8 5 47 3730
+TX 2-Yr 4 28 14 3 52 1353
+Non-TX 7 19 4 25 46 1131
+Unspecified 0 1 0 0 99 2133
+Feeder School Seniors
+UT/A&M 8 32 6 18 35 179
+Non-TX 8 9 0 36 47 147
+Feeder School Top
+10% Seniors
+UT/A&M 4 15 0 45 36 48
+Non-TX 14 2 0 28 57 36
+Feeder School Second
+10% Seniors
+UT/A&M 14 24 0 7 54 52
+Non-TX 7 8 0 29 56 30
+SOURCET:e xas Higher Education OpportunityP roject, Senior Wave 1 Data
+The upper panel reveals that most students who identify a Texas institution
+(flagships, other Texas four-year institutions or Texas 2-year institutions)
+as their first preference choose another Texas four-year institution
+as their alternative. Evidence that students who identify a non-Texas
+institution as their first choice split their second option between other
+Texas four-year institution versus another out-of-state institution, with a
+slight inclination for the latter, undermines claims of the "brain drain"
+hypothesis.
+The lower panel indicates that feeder high school graduates have
+strong preferences for out-of-state institutions. For example, almost half
+of top decile seniors who graduate from feeder high schools and identify
+either UT or A&M as their first preference name an out-of-state institution
+as their alternative. Moreover-and contrary to the predictions of
+the brain-drain hypothesis-the majority of feeder high school students
+who identify an out-of-state institution as their first preference choose
+another out-of-state institution as their second alternative. Although
+57% of top decile graduates do not name a second preference, 28%
+name another out-of-state institution, and 14% name UT or A&M as
+their second choice. The corresponding shares for students ranked in the
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+Testing the "Brain Drain" Hypothesis 729
+second decile are 56%, 29%, and 7%, respectively. That most of these
+students select yet another out-of-state institution as an alternative appears
+to indicate that students choose to leave the state rather than being
+crowded out. More top decile than second decile students select a public
+flagship as their second choice, probably because admission to non-
+Texas institutions is uncertain (Niu et al., 2006). Essentially, H.B. 588 is
+an admission insurance policy for top decile graduates who set their
+sights on non-Texas institutions.
+The "brain drain" hypothesis partly rests on the enrollment outcomes
+of second decile feeder school students who prefer UT or A&M but who
+are potentially "crowded out" by top decile graduates from less competitive
+high schools. To address this question, Table 5 cross-classifies first
+college preference, recorded during the senior year, and actual enrollment
+the following year, based on the follow-up interview. For the state
+as a whole, 62% of all Texas seniors who specify UT or A&M as their
+first choice actually enroll at these institutions the year after high school
+graduation. Compared with the most selective institutions nationally,
+this represents a high probability of enrollment, and it is consistent with
+the published 2002 institutional admissions at UT and A&M.
+TABLE 5
+Cross-Classification of 1st College Preference by Actual Enrollment: Texas College Going Public
+High school Seniors, 2002 (in percent)
+Actual Enrollment
+1st College Preference Not Enrolled UT/A&M Other TX 4-Yr TX 2-Yr Non-TX N
+All Seniors
+UT/A&M 5 62 13 19 1 621
+Other TX 4-Yr 7 1 66 24 2 1740
+TX 2-Yr 25 0 3 71 1 526
+Non-TX 13 5 13 18 51 492
+Unspecified 24 3 22 47 4 866
+Feeder School Seniors
+UT/A&M 4 74 13 9 0 91
+Non-TX 21 3 14 16 47 62
+Feeder School Top
+10% Seniors
+UT/A&M 0 100 0 0 0 24
+Non-TX 22 9 3 8 59 13
+Feeder School Second
+Decile Seniors
+UT/A&M 0 96 2 2 0 34
+Non-TX 32 0 3 2 62 13
+SOURCET:e xas Higher Education OpportunityP roject, Senior Wave 1 & 2 Data
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+730 The Journal of Higher Education
+Of special relevance for the "brain drain" hypothesis, these tabulations
+show that, compared with the average Texas senior who attends a typical
+high school, feeder high school graduates are more successful (74%) in
+realizing their goal of enrolling at UT or A&M. All top decile feeder high
+school students whose top college choice was one of the public flagships
+actually matriculated there the following fall. Moreover, and contrary to
+media anecdotes that second decile feeder school students denied access
+to UT or A&M leave the state, our data show that 96% of second decile
+feeder high school graduates who identify UT or A&M as their first preference
+actually matriculate there in the following fall. The remainder matriculates
+at other Texas four-year and two-year institutions, and only trivial
+shares enroll out of state. Based on these data, it is difficult to argue
+that H.B. 588 has undermined second decile feeder school students' access
+to the public flagships. If anything, the very few second decile feeder
+school students who are denied admission to one of the flagships enroll at
+other Texas institutions, not at out-of-state schools. Of course, it is conceivable
+that prior to H.B. 588 even higher shares of students would name
+UT or A&M as their top college choice and actually matriculate, but this
+begs the question about whether even higher levels of advantaged access
+to the public flagships was justified in the first place.
+Among seniors aspiring to attend non-Texas institutions, only about
+half realize their college goal, but this is true of students nationally because
+most states give admission priority to their own residents. Preference
+for in-state residents is particularly high in Texas, where by law,
+80% of the student body at public institutions must be Texas residents.
+Of students who prefer other Texas four-year and two-year institutions,
+66% and 71% succeed in enrolling there. At the same time, 13% of students
+aspiring to attend non-Texas institutions do not enroll anywhere,
+compared with 5% and 7%, respectively, for those whose first preference
+is UT, A&M, or another Texas four-year institution. Moreover, one
+in four students who prefer a Texas two-year institution fails to enroll
+there or anywhere. This exposes a significant problem in Texas higher
+education-namely, the large numbers of college-eligible students who
+do not enroll at any institution of higher education.
+The difficulty of actualizing out-of-state enrollment plans also affects
+students from feeder high schools, among whom less than half of those
+seeking admission to non-Texas institutions actually succeed in enrolling.
+Although students ranked in the top two deciles of their graduating
+class are more successful enrolling out of state (about 60% realize
+non-Texas college plans), this is significantly lower than their success
+enrolling at Texas institutions. Less than 10% of top decile feeder school
+students who identify an out-of-state institution as their first preference
+actually matriculate at one of the flagships, lending support to our claim
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+Testing the "Brain Drain" Hypothesis 731
+that UT and A&M serve as backup insurance against the odds of rejection
+from a selective non-Texas institution. However, for second decile
+graduates from feeder high schools, the public flagships no longer provide
+back-up insurance. Surely, this is the main source of dissatisfaction
+with H.B. 588, but it hardly constitutes evidence of "crowding out"
+given that second decile feeder high school graduates enjoy appreciably
+higher access to the public flagships than do second decile graduates
+from typical Texas high schools.
+Conclusion
+We examined the college preferences and enrollment decisions of a
+representative sample of Texas high school seniors who graduated in
+2002, four years after the top 10% law was implemented. We find that
+feeder school students enjoy a substantial advantage in their access to
+the Texas public flagships, and that conditional on admission, top 10%
+graduates' enrollment odds are similar to those of their counterparts
+from typical Texas high schools. Most importantly, and in contrast to
+claims based on anecdotes, empirical evidence does not support the
+"brain drain" hypothesis. Specifically, feeder high school students
+ranked in the top two deciles of their senior class have strong preference
+for out-of-state institutions, and second decile feeder high school students
+are no more likely than are their top decile counterparts to prefer
+and to enroll out of state. Furthermore, most feeder high school students
+ranked in the top 20% of their class who identify a non-Texas institution
+as their first college preference choose yet another out-of-state institution
+as their second choice. Virtually all second decile feeder school students
+who identify one of the public flagships as their first preference
+enroll there the following fall. Overall, our examination of ranked preferences
+leads us to conclude that students who enroll at out-of-state institutions
+do so largely by choice, within the constraints of admission,
+affordability, and opportunity to leave the state. In fact, students' ranked
+preferences indicate that even greater numbers would leave the state if
+they were admitted to their preferred non-Texas institution.
+Throughout this study, we assume that students' top-ranked institution
+is their preferred choice, but it is conceivable that an environment of constrained
+choices may lead some students to rank out-of-state institutions
+higher than Texas institutions. In other words, the distinction between
+forced and voluntary departures from the state may be less defined. Even
+though we cannot perfectly distinguish between choosing to leave or
+being squeezed out of state, the "brain drain" appears to be chimerical.
+Our findings lead us to question the broad educational mission of
+public institutions, particularly in Texas, where relatively low tuition
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+732 The Journal of Higher Education
+makes college accessible to students from a broad range of income
+strata. Whether by design or default, the Texas top 10% law has heightened
+awareness of the criteria used to allocate slots at public institutions
+of varying selectivity: How should equity considerations be weighted in
+devising criteria for leveling the playing field in the future?
+The bold Texas experiment with a uniform admission system has
+many lessons for the national struggle to devise criteria for broadening
+access to higher education in a highly unequal playing field. First, the
+success of H.B. 588 in diversifying the ethno-racial composition of the
+freshman class depends both on the presence of a large minority population
+and on pervasive segregation (Tienda & Niu, 2006), a condition
+which few states can meet (Orfield & Lee, 2004; Tienda, 2001).
+Second, the Texas experiment has again challenged the premise that
+standardized test scores are important predictors of college success. By
+admitting students without regard to ACT or SAT scores, Texas colleges
+and universities have reaffirmed the superiority of performance-based
+over test-based merit criteria. For example, at UT, top decile students not
+only outperformt heir lower-rankedc ounterpartsw ith test scores 200-300
+points higher (Faulkner, 2000, 2002), but they also defy predictions that
+high-achieving students from underperforming schools are destined for
+failure because they are ill-prepared for college level academic work.
+A third powerful lesson is that the success of percent plans in broadening
+educational opportunity beyond high school requires strong outreach
+efforts to encourage rank-eligible students to apply for admission
+(Walker & Lavergne, 2001). Having refused to consider race in college
+admissions, administrators at A&M appreciate that outreach activities
+are more effective than a uniform admission guarantee in broadening
+college access to underrepresented groups (Spencer, 2004). However,
+even with strong outreach efforts, Texas flagships have not equalized the
+enrollment odds of students from high schools with low college-going
+traditions compared with students from typical high schools.
+This raises a final dilemma for higher education generally-namely,
+the rising demographic pressure on higher education as the children of
+baby boomers reach college age. Nationally, but even more dramatically
+in Texas, higher educational opportunities have not kept pace with the
+rapid demographic growth. To some extent, the admissions squeeze at
+the selective Texas public institutions merely reflects the growing demand
+for access to the most competitive institutions when most of the
+growth in postsecondary opportunities has occurred in two-year colleges.
+This squeeze only accentuates the challenge of broadening access
+to higher education while maintaining standards and rewarding academic
+achievement.
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+APPENDIX 1
+Descriptive Statistics for Covariates: Means or Percents (standard deviation)
+SchoolType
+Sample Resource- Resource- Longhorn/
+Mean Feeder Affluent Average Poor Century
+N 12778 732 3252 5198 1176 2420
+Student Characteristics
+% Female 0.49 0.54
+Race/Ethnicity
+% Black 0.13 0.04
+% Hispanic 0.37 0.11
+% Asian-American 0.05 0.08
+% Non-Hispanic White 0.45 0.74
+% Other Race - 0.01
+% Missing - 0.02
+First Thought About College
+% Always 0.58 0.72
+% Middle High School 0.12 0.09
+% High School 0.18 0.12
+% Don't Know 0.05 0.03
+% Missing 0.07 0.03
+Socio-Economic Status
+Parental Education
+% Less Than High School 0.17 0.04
+% High School 0.21 0.12
+% Some College 0.22 0.24
+% College and Higher 0.24 0.53
+% Don't Know 0.16 0.07
+Home Ownership
+% Rent 0.16 0.09
+% Own 0.73 0.87
+% Don't Know/Missing 0.11 0.04
+School Characteristics
+Percent of Students 34.06 57.00
+Who Passed Algebra (21.29) (23.61)
+Total High School 1.59 0.81
+Drop-Out Rate (1.08) (0.57)
+0.50 0.50 0.44 0.50
+0.09
+0.12
+0.07
+0.65
+0.02
+0.06
+0.65
+0.11
+0.14
+0.05
+0.05
+0.07
+0.20
+0.26
+0.33
+0.14
+0.12
+0.30
+0.05
+0.46
+0.02
+0.05
+0.58
+0.12
+0.17
+0.05
+0.08
+0.13
+0.24
+0.24
+0.24
+0.15
+0.06
+0.70
+0.01
+0.12
+0.01
+0.12
+0.50
+0.14
+0.24
+0.05
+0.07
+0.31
+0.19
+0.15
+0.12
+0.23
+0.20
+0.62
+0.02
+0.08
+0.01
+0.08
+0.46
+0.15
+0.25
+0.05
+0.09
+0.33
+0.22
+0.17
+0.07
+0.20
+0.10 0.18 0.13 0.24
+0.79 0.72 0.70 0.63
+0.11 0.10 0.17 0.13
+45.43
+(19.75)
+1.01
+(1.03)
+28.51
+(17.74)
+1.73
+(0.98)
+25.57
+(24.23)
+1.65
+(0.89)
+27.86
+(16.34)
+2.25
+(1.07)
+Location
+% North-East
+% North-West
+% South-East
+% South-West
+0.25 0.18
+0.04 0.00
+0.54 0.82
+0.17 0.00
+SOURCTEe:x asH igherE ducationO pportunitPyr ojectS, eniorW ave1 Data
+0.34
+0.08
+0.57
+0.00
+0.19
+0.05
+0.53
+0.23
+0.00
+0.02
+0.85
+0.13
+0.41
+0.00
+0.27
+0.32
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+APPENDIX 2
+College Enrollment: Texas Feeder High School Students by Class Rank
+In Texas Barron'Isn dex obs
+Top 10%
+CORNELL UNIVERSITY-NY STATE
+STATUTORY COLLEGES
+DARTMOUTH COLLEGE
+RICE UNIVERSITY
+UNITED STATES AIR FORCE ACADEMY
+UNIVERSITY OF PENNSYLVANIA
+THE UNIVERSITY OF TEXAS AT AUSTIN
+UNIVERSITY OF PITTSBURGH-MAIN CAMPUS
+UNIVERSITY OF PUGET SOUND
+BAYLOR UNIVERSITY
+OUACHITA BAPTIST UNIVERSITY
+SOUTHERN METHODIST UNIVERSITY,
+DALLAS TX
+TEXAS A & M UNIVERSITY
+UNIVERSITY OF HOUSTON-DOWNTOWN
+RICHLAND COLLEGE
+TOMBALL COMMUNITY COLLEGE
+2nd 10%
+UNIVERSITY OF SOUTHERN CALIFORNIA
+WASHINGTON UNIVERSITY
+BRIGHAM YOUNG UNIVERSITY
+GEORGE WASHINGTON UNIVERSITY
+SOUTHWESTERN UNIVERSITY
+THE UNIVERSITY OF TEXAS AT AUSTIN
+BAYLOR UNIVERSITY
+SOUTHERN METHODIST UNIVERSITY
+SOUTHWEST TEXAS STATE UNIVERSITY
+TEXAS A & M UNIVERSITY
+THE UNIVERSITY OF TEXAS AT DALLAS
+TRINITY UNIVERSITY
+UNIVERSITY OF COLORADO AT BOULDER
+UNIVERSITY OF OKLAHOMA NORMAN CAMPUS
+EMBRY-RIDDLE AERONAUTICAL UNIVERSITY
+STEPHEN F AUSTIN STATE UNIVERSITY
+TEXAS CHRISTIAN UNIVERSITY
+TEXAS TECH UNIVERSITY
+UNIVERSITY OF NORTH TEXAS
+PRAIRIE VIEW A & M UNIVERSITY
+SAM HOUSTON STATE UNIVERSITY
+FLORIDA COLLEGE
+TEXAS SOUTHERN UNIVERSITY, HOUSTON TX
+UNIVERSITY OF HOUSTON-DOWNTOWN
+NORTH HARRIS MONTGOMERY
+COMMUNITY COLLEGE DIST
+TOMBALL COMMUNITY COLLEGE
+N
+N
+Y
+N
+N
+Y
+N
+N
+Y
+N
+Y
+Y
+Y
+Y
+Y
+N
+N
+N
+N
+Y
+Y
+Y
+Y
+Y
+Y
+Y
+Y
+N
+N
+N
+Y
+Y
+Y
+Y
+Y
+Y
+N
+Y
+Y
+Y
+Y
+Most competitive
+Most competitive
+Most competitive
+Most competitive
+Most competitive
+Highly competitive
+Highly competitive
+Highly competitive
+Very competitive+
+Very competitive
+Very competitive
+Very competitive
+Noncompetitive
+Community College
+Voc. & Trade School
+Most competitive
+Most competitive
+Highly competitive
+Highly competitive
+Highly competitive
+Highly competitive
+Very competitive +
+Very competitive
+Very competitive
+Very competitive
+Very competitive
+Very competitive
+Very competitive
+Very competitive
+Competitive
+Competitive
+Competitive
+Competitive
+Competitive
+Less competitive
+Less competitive
+Noncompetitive
+Noncompetitive
+Noncompetitive
+Community College
+Voc. & Trade Schools
+SOURCET:e xas Higher Education OpportunityP roject, Senior Wave 1 Data
+1
+1
+1
+1
+1
+17
+1
+1
+3
+1
+1
+10
+1
+1
+1
+2
+1
+3
+1
+2
+17
+2
+1
+2
+15
+1
+1
+1
+1
+1
+1
+1
+3
+1
+1
+1
+1
+1
+2
+1
+3
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+APPENDIX 3
+Relative Risk Ratios for 1st College Preference: Texas Public High School Seniors, 2002 (Other
+Texas 4-Year is the comparison group)
+No
+No College UT/A&M TX 2-Yr Non-TX Preference
+Student Characteristics
+Female
+Missing
+Race/Ethnicity
+Black
+Hispanic
+Asian-American
+Other Races
+Missing
+First Thought About College
+Middle High School
+High School
+Don't Know
+Missing
+Class Rank
+Top 10%
+Second 10%
+Rank Estimated Dummy
+Socio-Economic Status
+Parental Education
+Less Than High School
+Some College
+College and Higher
+Don't Know
+Home Ownership
+Rent
+Don't Know/Missing
+School Characteristics
+Percent of Students Who
+Passed Algebra
+Total High School Drop-Out
+Rate
+SchoolType
+Feeder
+Resource-Affluent
+Resource-Poor
+Longhorn/Century
+0.52** 0.62** 1.0
+1.2 1.2 1.0
+0.7*** 0.5***
+0.6 1.3
+0.6*** 0.4*** 0.5*** 1.3* 1.2
+1.1 0.9 0.8** 0.8 1.0
+0.4*** 1.3* 0.6** 0.7* 1.3
+1.5* 1.0 0.8 1.2 1.3*
+0.8 0.5 0.5* 1.1 1.6**
+1.8*** 0.9 1.3** 0.9
+2.5*** 0.6*** 1.8*** 0.9 1.4***
+6.6*** 0.5* 1.3 1.1
+58.4*** 0.4 0.7 1.0 29.8***
+0.3*** 44*** 0.3*** 2.1*** 0.6***
+0.3*** 2.2*** 0.5*"' 1.2 0.6***
+2.4*** 0.9 1.7*** 1.2 2.3***
+1.4*** 0.7** 1.2 1.1 1.5
+0.7*** 1.0 0.8** 1.0 1.0
+.*** 1.0 10.5 1. 1.0
+1.** 1.0 1.0 1.1 1.9***~'
+1.4*** 0.8
+1.5***' 0.9
+1.0 1.1 0.9
+1.2 1.1 1.1
+1.00 1.01** 1.00 1.01*** 1.00**
+1.07* 1.02 1.03 0.99 1.09
+0.7** 2.2*** 0.4*** 2.8*** 1.0
+0.8* 1.3** 0.7*** t.5*** 1.1
+0.6*** 0.5*** 0.8* 0.5*** 0.7***
+0.8 0.9 1.3* 0.8
+Location
+North-East 1.2* 0.8 1.4*** 1.6*** 1.1
+North-West 0.6*** 0.3*** 1.8*** 1.8*** 0.8
+South-West 0.7*** 0.7** 0. 5*** 2.2*** 1.0
+SOURCE: Texas Higher Education Opportunity Project, Senior Wave 1 & 2 Data
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+APPENDIX 4
+Relative Risk Ratios for Actual Enrollment: Texas Public High School Seniors, 2002 (Other Texas
+4-Year is the comparison group)
+Not Enrolled UT/A&M TX 2-Yr Non-TX
+Student Characteristics
+Female
+Missing
+Race/Ethnicity
+Black
+Hispanic
+Asian-American
+Other Races
+Missing
+First Thought About College
+Middle High School
+High School
+Don't Know
+Missing
+Class Rank
+Top 10%
+Second 10%
+Rank Estimated Dummy
+Socio-Economic Status
+Parental Education
+Less Than High School
+Some College
+College and Higher
+Don't Know
+Home Ownership
+Rent
+Don't Know/Missing
+School Characteristics
+Percent of Students Who Passed Algebra
+Total High School Drop-Out Rate
+School Type
+Feeder
+Resource-Affluent
+Resource-Poor
+Longhorn/Century
+0.9 0.7*** 1.3*** 1.1
+1.0 1.3 1.4 0.8
+0.5*** 0.5** 0.6*** 1.2
+0.9 0.7* 1.0 0.6*
+0.7* 1.2 0.8 0.4***
+0.6 0.8 0.5* 1.1
+0.4* 0.7 0.7 1.5
+1.5*** 0.8 1.2 1.0
+2.7*** 0.4*** 1.5*** 1.0
+3.7*** 0.7 1.6* 0.9
+4.4*** 1.1 1.4* 1.3
+0.2*** 16.7*** 0.2*** 2.0***
+0.3*** 5.0*** 0.4*** 0.9
+2.7*** 0.4** 2.0*** 1.4
+1.5** 1.0 1.4** 1.3
+0.6*** 1.3 0.9 0.9
+0.3*** 1.5* 0.7*** 1.3
+1.4* 1.2 1.7*** 1.6
+1.6*** 0.6*
+1.0 1.1
+1.00
+0.98
+1.0 0.8
+0.8 1.0
+1.00 1.01** 1.02***
+0.92 0.95 0.89
+0.3*** 3.0*** 0.5*** 2.0**
+0.7** 1.5* 0.9 1.3
+0.8 0.4** 0.7* 0.3**
+2.0*** 0.9 1.6*** 1.3
+Location
+North-East 1.2 0.6** 1.7*** 1.9***
+North-West 1.1 0.3** 1.3 3.3***
+South-West 1.0 0.5** 1.1 2.7***
+SOURCET:e xas Higher Education OpportunityP roject, Senior Wave 1 & 2 Data
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+Testing the "Brain Drain" Hypothesis 737
+Notes
+1Anticipating an enrollment squeeze as the demand for automatic admission rose, in
+2000, UT President Larry Faulkner temporarily increased the size of the freshman class,
+but this increase was rescinded in 2002 as the university exceeded its carrying capacity
+(see Faulkner, 2000; Jayson, 2003b).
+2In a highly provocative article published in the New York Times Education Life Supplement
+(April 14, 2002), Jim Yardley reported on twin sisters who were graduating
+from an elite Texas public high school. One twin was admitted automatically to UT, but
+her sister was initially deferred, and she did not get in to her preferred major when she
+was later admitted. Noting that both were admitted to University of North Carolina and
+both were committed to attend the same institution, Yardley implied the "brain drain"
+hypothesis. Subsequent allegations have been more direct.
+3SAT I and ACT tests are not used in course placement decisions, but SAT II and
+other tests may be so used (G. Lavergne, personal communication, January 16, 2003).
+4Institutions actually have more control over the overall enrollment cap than they
+concede because they can modify the number of transfer or graduate students, but the
+overall carrying capacity is bound by physical infrastructure.
+5In 1996, the practice of automatically admitting applicants who were ranked in the
+top 10% of their class was changed because the Faculty Council and the University Admissions
+Committee wanted a rigorous admission process that was more consistent with
+a selective school. Essays were used for the first time in 1996. These changes were underway
+independent of the court case about affirmative action.
+60f these, three schools were ineligible because they were special-needs schools, and
+98 of the remaining 105 schools cooperated by permitting in-class administration of the
+survey (86) or providing student addresses (12) so that a mail survey could be administered.
+Only two of the non-cooperating schools were outright refusals and the remaining
+five were long-term recalcitrant. The school-level cooperation rate of 93.3% (98/105) is
+considered outstanding.
+7Higher-rankeds tudents are more likely to know their class rank, to state an institutional
+preference, and to actually enroll in college, which also contributes to the disproportionate
+share classified as top decile graduates among college-bound students, but so
+too does upward bias in response error.
+8Longhorn and Century schools were targeted by UT and A&M, respectively, based
+on two criteria: high shares of economically disadvantaged students and low collegegoing
+traditions. Many of these schools have high concentrations of minority students.
+See Goodman, 2003.
+References
+Bowen, W. G., & Bok, D. (1998). The shape of the river: Long-term consequences of
+considering race in college and university admissions. Princeton, NJ: Princeton University
+Press.
+Coleman, J. S. (1990). Equality and achievement in education. Boulder, CO: Westview.
+Faulkner, L. R. (2000, October 25). "Top 10 percent" helps students. San Antonio Express-
+News, p. 5B.
+Faulkner, L. R. (2002, April 5). Class rank predicts student success. USA Today, p. 11A.
+Flores, M. (2003, September 26). Senator wants college rule axed; Official: Automatic
+admission for top 10% in high schools is unfair. San Antonio Express News, p. lB.
+Glater, J. (2004, June 13). Diversity plan shaped in Texas is under attack. The New York
+Times, p. Al.
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+738 The Journal of Higher Education
+Goodman, K. (2003). Longhorn scholars program opens avenues for underrepresented
+students in Texas. Diversity Digest 7(3), 1-3.
+Gratz v. Bollinger, 539 U.S. 244 (2003).
+Grutter v. Bollinger, 539 U.S. 306 (2003).
+Hopwood v. University of Texas, 78 F.3d 932 (1996).
+Irving, C. (2004). Texas returns to affirmative action: Readjustment and confusion in the
+aftermath of recent U.S. Supreme Court decisions. National Crosstalk, 12(1), 1,
+15-16.
+Jayson, S. (2003a, March 25). Top 10% students pack UT's fall roster. Austin American-
+Statesman, p. Al.
+Jayson, S. (2003b, September 16). UT is smaller but still biggest; Freshman class has
+greater proportion of minorities than 2002. Austin American-Statesman, p. Al.
+Jencks, C. (1988). Whom must we treat equally for educational opportunity to be equal?
+Ethics 98(3), 518-533.
+Jones, B. W., Olson, T. B., Boyd, R. F., Jr., Clement, P. D., & Salmons, D. B. (2002a).
+Brief for the United States as amicus curiae supporting petitioner, Grutter v.
+Bollinger. Retrieved July 21, 2004 from http://supreme.lp.findlaw.com/
+supreme_court/briefs/02-241/02-241.mer.ami.usa.pdf
+Jones, B. W., Olson, T. B., Boyd, R. F., Jr., Clement, P. D., & Salmons, D. B. (2002b).
+Brief for the United States as amicus curiae supporting petitioner, Gratz v. Bollinger.
+Retrieved July 21, 2004 from http://supreme.lp.findlaw.com/supreme_court/briefs/02-
+516/02-516.mer.ami.usa.pdf
+Karen, D. (2002). Changes in access to higher education in the United States:
+1980-1992. Sociology of Education, 75, 191-210.
+Lavergne, G. M., & Walker, B. (2003). Implementation and results of the Texas automatic
+admissions law at the University of Texas at Austin. Austin: University of Texas
+at Austin, Office of Admissions Research.
+Leicht, K., & Sullivan, T. A. (2000). Minority student pipelines before and after the challenges
+to affirmative action. Retrieved from http://www.texastoplO.princeton.edu/
+publications/leicht052500.pdf
+Manski, C. F., & Wise, D. (1983). College choice in America. Cambridge, MA: Harvard
+University Press.
+McDonough, P. M. (1997). Choosing colleges: How social class and schools structure
+opportunity. Albany: State University of New York Press.
+Montejano, D. (2001). Access to the University of Texas at Austin and the ten percent
+plan: A three-year assessment. Austin: University of Texas at Austin.
+Nissimov, R. (2000, June 4). Meet Russell Crake; He graduated from Bellaire High
+School with a 3.94 GPA and an SAT Score of 1240. So why is he holding a rejection
+letter from the University of Texas?; Students run into top 10 percent law. The Houston
+Chronicle, p. Al.
+Nissimov, R. (2003, June 24). Supreme Court actions; UT to reintroduce race-based criteria;
+President wants cap on "top 10 percent" students. The Houston Chronicle, p. A4.
+Niu, S., Tienda, M., & Cortes, K. (2006). College selectivity and the Texas Top 10%
+Law: Economics of Education Review, (In press).
+Orfield, G., & Lee, C. (2004). Brown at 50: Dream or Plessy's nightmare? Unpublished
+manuscript, The Civil Rights Project, Harvard University, Cambridge, MA.
+This content downloaded from 128.112.149.209 on Tue, 25 Mar 2014 09:44:12 AM
+All use subject to JSTOR Terms and Conditions
+Testing the "Brain Drain" Hypothesis 739
+Rooney, C. (1998, September). Test scores do not equal merit: Enhancing equity & excellence
+in college admissions by deemphasizing SAT and ACT results. Cambridge,
+MA: The National Center for Fair and Open Testing.
+Spencer, J. (2004, November 20). A&M President pitches school to minorities; Gates
+pays visit to area students as university tries to boost diversity. Houston Chronicle,
+p. B3.
+Texas Education Agency (TEA). (2001). Pocket edition: Texas public school statistics.
+Austin: Texas Education Agency Division of Performance Reporting.
+Texas Higher Education Coordinating Board (THECB). (1998). Report on the effects of
+the Hopwood decision on minority applications, offers, and enrollments at public institutions
+of higher education in Texas. Austin: Author.
+Texas Higher Education Coordinating Board (THECB). (2003). Participation and success
+forecast, 2003-2015: Texas institutions of higher education. Austin: Division of
+Planning and Information Resources.
+Tienda, M. (2001). College admissions policies and the educational pipeline: Implications
+for medical and health professions. In B. D. Smedley, A. Y. Stith, L. Colburn, &
+C. H. Evans (Eds.), The right thing to do, the smart thing to do: Enhancing diversity
+in health professions (pp. 117-142). Washington, DC: National Academy Press for the
+Institute of Medicine.
+Tienda, M., Leicht, K., Sullivan, T., Maltese, M., & Lloyd, K. (2003). Closing the gap?
+Admissions & enrollments at the Texas public flagships before and after affirmative
+action. Unpublished manuscript, Princeton University, Princeton, NJ.
+Tienda, M., & Niu, S. (2006). Capitalizing on segregation; Pretending neutrality:
+College admissions and the Texas top 10% law. American Law and Economics Review
+(In press).
+University of Texas Office of Public Affairs (UTOPA). (2003, June). Incoming freshman
+class at The University of Texas at Austin to have highest academic qualifications,
+largest Hispanic representation. Austin: University of Texas.
+Walker, B., & Lavergne, G. (2001). Affirmative action and percent plans: What we
+learned in Texas. The College Board Review 193, 18-23.
+Wolfson, M. (2004, June 25). Universities urge caps to top 10 percent rule: Schools want
+flexibility in admissions. Corpus Christi Caller-Times, p. B3.
+Yardley, J. (2002, April 14). Desperately seeking diversity: The 10 percent solution. The
+New York Times, Education Life Supplement, section 4A, p. 28.
