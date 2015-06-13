@@ -71,7 +71,7 @@ var termsDefinition = [
     },
     {
         display: "estimate v.",
-        terms: ["estimate v."]
+        terms: ["estimate", "estimates", "estimated"]
     },
     {
         display: "feel/feels/felt",
@@ -201,7 +201,7 @@ var termsDefinition = [
     },
     {
         display: "suppose/supposes/supposed",
-        terms: ["suppose"]
+        terms: ["suppose", "supposes", "supposed"]
     },
     {
         display: "suspect/suspects/suspected",
@@ -484,6 +484,14 @@ var termsDefinition = [
     },
     {
         header: "Evidentials"
+    },
+    {
+        display: "differ/differs/differed",
+        terms: ["differ", "differs", "differed", "differing"]
+    },
+    {
+        display: "represent/represented/represents/representing",
+        terms: ["represent", "represented", "represents", "representing"]
     }
 ];
 
@@ -534,6 +542,33 @@ xhr.onreadystatechange = function (e) {
     if (xhr.readyState === 4) {
         var text = xhr.responseText;
         var results = [], counter = 0;
+
+        //split the text into articles
+        var regexpTitle = /^TITLE: (.*)$/gm;
+        var matchTitle = regexpTitle.exec(text);
+        var currentStart = -1, currentTitle = null;
+        var articles = [];
+        while (matchTitle) {
+            if (currentTitle) {
+                articles.push({
+                    title: currentTitle,
+                    article: text.substr(currentStart, matchTitle.index - currentStart)
+                });
+            }
+            currentTitle = matchTitle[1];
+            currentStart = regexpTitle.lastIndex;
+            matchTitle = regexpTitle.exec(text);
+        }
+        articles.push({
+            title: currentTitle,
+            article: text.substr(currentStart)
+        });
+
+        results.push(articles.length);
+        articles.forEach(function (article) {
+            results.push(article.title/* + ", " + article.article.length*/);
+        });
+
         for (var i = 0; i < termsDefinition.length; i++) {
             var def = termsDefinition[i];
             var matches = [];
@@ -545,35 +580,10 @@ xhr.onreadystatechange = function (e) {
             def.terms.forEach(function (term) {
                 term = term.trim();
                 term.replace(/ /g, "\\s+");
-                var regexp = new RegExp("[\\s\\.,;]" + term + "[\\s\\.,;]", "g");
-                var match = regexp.exec(text);
-                while (match) {
-                    var ok = true;
-                    if (def.previousNot) {
-                        //find the previous word
-                        var start = findCharacter(text, match.index - 1, true, " \n\t,");
-                        var word = text.substr(start + 1, match.index - 1 - start);
-                        if (def.previousNot.indexOf(word) >= 0) {
-                            ok = false;
-                        }
-                    }
-                    if (def.nextNot) {
-                        //find the previous word
-                        start = findCharacter(text, match.index, false, " \n\t,");
-                        var end = findCharacter(text, start, false, " \n\t,");
-                        word = text.substr(start + 1, end - start - 1);
-                        if (def.nextNot.indexOf(word) >= 0) {
-                            ok = false;
-                        }
-                    }
-                    if (ok) {
-                        matches.push({
-                            position: match.index
-                        });
-                    }
-                    regexp.lastIndex--;  //remove the separator position
-                    match = regexp.exec(text);
-                }
+                var regexp = new RegExp("[\\s\\.,;]" + term + "[\\s\\.,;]", "gi");
+                articles.forEach(function (articleInfo) {
+                    analyze(articleInfo.title, articleInfo.article, def, regexp, matches);
+                });
             });
             //pick up two sentences
             var indexToPickUp = [], max = 2;
@@ -596,11 +606,13 @@ xhr.onreadystatechange = function (e) {
             results.push("\n(" + (counter + 1) + ") " + def.display + ", frequency is " + matches.length + (matches.length !== 0 ? ". Eg." : ""));
             counter++;
             if (matches.length !== 0) {
+                var info;
                 for (j = 0; j < indexToPickUp.length; j++) {
-                    var position = matches[indexToPickUp[j]].position;
-                    var start = findCharacter(text, position, true, ".?");
-                    var end = findCharacter(text, position + 1, false, ".?");
-                    results.push((j === 0 ? "a) " : "b) ") + text.substr(start + 1, end - start).trim().replace(/\s+/g, " "));
+                    info = matches[indexToPickUp[j]];
+                    var position = info.position;
+                    var start = findCharacter(info.article, position, true, ".?");
+                    var end = findCharacter(info.article, position + 1, false, ".?");
+                    results.push((j === 0 ? "a) " : "b) ") + info.article.substr(start + 1, end - start).trim().replace(/\s+/g, " ") + " (" + info.title + ")");
                 }
             }
         }
@@ -628,4 +640,38 @@ function createTermDef() {
         }
     };
     xhr.send();
+}
+
+function analyze(title, article, def, regexp, results) {
+    regexp.lastIndex = 0;
+    var match = regexp.exec(article);
+    while (match) {
+        var ok = true;
+        if (def.previousNot) {
+            //find the previous word
+            var start = findCharacter(article, match.index - 1, true, " \n\t,");
+            var word = article.substr(start + 1, match.index - 1 - start);
+            if (def.previousNot.indexOf(word) >= 0) {
+                ok = false;
+            }
+        }
+        if (def.nextNot) {
+            //find the previous word
+            start = findCharacter(article, match.index, false, " \n\t,");
+            var end = findCharacter(article, start, false, " \n\t,");
+            word = article.substr(start + 1, end - start - 1);
+            if (def.nextNot.indexOf(word) >= 0) {
+                ok = false;
+            }
+        }
+        if (ok) {
+            results.push({
+                position: match.index,
+                title: title,
+                article: article
+            });
+        }
+        regexp.lastIndex--;  //remove the separator position
+        match = regexp.exec(article);
+    }
 }
