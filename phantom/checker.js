@@ -154,7 +154,7 @@ var configurations = [
         loadImages: false,
         alreadyHasJQ: false,
         useProxy: false,
-        interval: 10    //minutes
+        interval: 60    //minutes
     }/*,
     {
         identifier: 8,
