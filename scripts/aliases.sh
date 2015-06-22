@@ -35,6 +35,7 @@ alias gw='gradle war'
 alias gcp='gradle copyDependencies'
 alias gstat='/Users/hcao/Documents/gitinspector-0.3.2/gitinspector/gitinspector.py -f java,c,cpp,h,hpp,py,glsl,rb,js,sql,html,css'
 alias pjs='$PJS_HOME/bin/phantomjs'
+alias sshbwh='ssh root@bwh -p 29356'
 
 unset -f gf
 gf() { 
