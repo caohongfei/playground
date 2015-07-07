@@ -87,6 +87,7 @@ var configurations = [
         timeout: 40,    //seconds
         loadImages: false,
         alreadyHasJQ: true,
+        enabled: true,
         useProxy: true,
         interval: 30    //minutes
     },
@@ -98,6 +99,7 @@ var configurations = [
         timeout: 20,
         loadImages: false,
         alreadyHasJQ: false,
+        enabled: true,
         useProxy: false,
         interval: 30    //minutes
     },
@@ -109,6 +111,7 @@ var configurations = [
         timeout: 20,
         loadImages: false,
         alreadyHasJQ: true,
+        enabled: true,
         useProxy: false,
         interval: 25    //minutes
     },
@@ -120,6 +123,7 @@ var configurations = [
         timeout: 40,
         loadImages: false,
         alreadyHasJQ: true,
+        enabled: false,
         useProxy: false,
         interval: 30    //minutes
     },
@@ -131,6 +135,7 @@ var configurations = [
         timeout: 40,
         loadImages: false,
         alreadyHasJQ: true,
+        enabled: true,
         useProxy: false,
         interval: 360    //minutes
     },
@@ -142,6 +147,7 @@ var configurations = [
         timeout: 40,
         loadImages: false,
         alreadyHasJQ: true,
+        enabled: true,
         useProxy: false,
         interval: 360    //minutes
     },
@@ -153,9 +159,10 @@ var configurations = [
         timeout: 40,
         loadImages: false,
         alreadyHasJQ: false,
+        enabled: true,
         useProxy: false,
         interval: 60    //minutes
-    }/*,
+    },
     {
         identifier: 8,
         name: "一号店 SanmiuSunflower新苗向日葵饼干 乳酪味夹心 700g 菲律宾进口",
@@ -164,9 +171,10 @@ var configurations = [
         timeout: 40,
         loadImages: false,
         alreadyHasJQ: true,
+        enabled: false,
         useProxy: false,
         interval: 180    //minutes
-    }*/
+    }
 ];
 
 var tasks = [];
@@ -304,6 +312,9 @@ function checkOneConfiguration(task) {
 }
 
 function createTask(config) {
+    if (!config.enabled) {
+        return;
+    }
     tasks.push({
         started:   false,
         completed: false,
