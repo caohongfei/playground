@@ -26,7 +26,7 @@ alias hpnet='open https://developer.apple.com/library/ios/documentation/Networki
 alias hpswift='open http://swiftdoc.org/'
 alias r='. ~/.bash_profile'
 alias gs='git status'
-alias gd='git diff'
+alias gd='clear;git diff'
 alias gp='git pull'
 alias gc='git commit -m'
 alias dbh='ssh -t huangshan "mysql -u gcapp -p"'
@@ -127,4 +127,17 @@ command_not_found_handle() {
   fi
 }
 
-
+unset -f tg
+tg() {
+  if [[ $1 == "" ]]; then echo Please specify the tag\'s name; return 127; fi
+  if git status  > /dev/null 2>&1; then
+    git tag $1;
+    git push origin $1;
+    OLDDIR=$PWD
+    until ! git status > /dev/null 2>&1; do LASTDIR="`basename $PWD`"; cd ..; done 
+    echo $LASTDIR has been tagged with $1
+    cd $OLDDIR
+  else
+    echo The current directory is not a git directory;
+  fi
+}
