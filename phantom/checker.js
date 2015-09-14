@@ -153,7 +153,7 @@ var configurations = [
     },
     {
         identifier: 7,
-        name: "GD价格",
+        name: "GD",
         url: "http://gold.hexun.com/hjxh/",
         selector: "#newprice",
         timeout: 40,
