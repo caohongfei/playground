@@ -174,6 +174,18 @@ var configurations = [
         enabled: false,
         useProxy: false,
         interval: 180    //minutes
+    },
+    {
+        identifier: 9,
+        name: "GNC Melatonin 3mg",
+        url: "http://www.gnc.com/GNC-Melatonin-3-mg/product.jsp?productId=16513406",
+        selector: ".product-price.product-sprite .now, .product-promos.product-sprite",
+        timeout: 40,    //seconds
+        loadImages: false,
+        alreadyHasJQ: true,
+        enabled: true,
+        useProxy: true,
+        interval: 30    //minutes
     }
 ];
 
