@@ -81,8 +81,8 @@ function formatDate(date) {
 var configurations = [
     {
         identifier: 1,
-        name: "GNC三倍鱼油",
-        url: "http://www.gnc.com/GNC-Triple-Strength-Fish-Oil-1500/product.jsp?productId=12643679",
+        name: "GNC三倍鱼油60 softgels",
+        url: "http://www.gnc.com/GNC-Triple-Strength-Fish-Oil-New-Improved-Formula-of-Triple-Strength-Fish-Oil-1500/product.jsp?productId=67338576",
         selector: ".product-price.product-sprite .now, .product-promos.product-sprite",
         timeout: 40,    //seconds
         loadImages: false,
@@ -107,7 +107,7 @@ var configurations = [
         identifier: 3,
         name: "上海天气",
         url: "http://www.weather.com.cn/weather/101020100.shtml",
-        selector: "#7d [data-dn=7d1], #7d [data-dn=7d2]",
+        selector: "ul.t.clearfix .on",
         timeout: 20,
         loadImages: false,
         alreadyHasJQ: true,

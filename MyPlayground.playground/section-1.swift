@@ -3,20 +3,17 @@
 import Cocoa
 
 class MyClass {
-    var a = 1
-    deinit {
-        print("deinit")
+    class func f() {
+        print("f in MyClass")
     }
 }
 
-var pointer: UnsafeMutablePointer<MyClass>!
+class MySubClass : MyClass {
+    override class func f() {
+        print("f in MySubClass")
+    }
+}
 
-pointer = UnsafeMutablePointer<MyClass>.alloc(1)
-pointer.initialize(MyClass())
-
-print(pointer.memory.a)
-pointer.destroy()
-pointer.dealloc(1)
-//pointer = nil
-
-var p: CFunctionPointer<() -> ()>
+let x: MyClass.Type
+x = MySubClass.self
+x.f()
