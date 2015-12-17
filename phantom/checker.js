@@ -86,7 +86,6 @@ var configurations = [
         selector: ".product-price.product-sprite .now, .product-promos.product-sprite",
         timeout: 40,    //seconds
         loadImages: false,
-        alreadyHasJQ: true,
         enabled: true,
         useProxy: true,
         interval: 30    //minutes
@@ -95,10 +94,9 @@ var configurations = [
         identifier: 2,
         name: "老山冻干粉",
         url: "http://detail.tmall.com/item.htm?spm=a1z10.1-b.w8171270-9438708950.55.zZhz6k&id=14943725766",
-        selector: ".tm-promo-price .tm-price, .tm-shopPromotion-title.tm-gold",
+        selector: ".tm-fcs-panel",
         timeout: 20,
         loadImages: false,
-        alreadyHasJQ: false,
         enabled: true,
         useProxy: false,
         interval: 30    //minutes
@@ -110,7 +108,6 @@ var configurations = [
         selector: "ul.t.clearfix .on",
         timeout: 20,
         loadImages: false,
-        alreadyHasJQ: true,
         enabled: true,
         useProxy: false,
         interval: 25    //minutes
@@ -122,7 +119,6 @@ var configurations = [
         selector: "#priceblock_ourprice_row .a-span12",
         timeout: 40,
         loadImages: false,
-        alreadyHasJQ: true,
         enabled: false,
         useProxy: false,
         interval: 30    //minutes
@@ -134,7 +130,6 @@ var configurations = [
         selector: "#jd-price",
         timeout: 40,
         loadImages: false,
-        alreadyHasJQ: true,
         enabled: true,
         useProxy: false,
         interval: 360    //minutes
@@ -146,7 +141,6 @@ var configurations = [
         selector: "#jd-price",
         timeout: 40,
         loadImages: false,
-        alreadyHasJQ: true,
         enabled: true,
         useProxy: false,
         interval: 360    //minutes
@@ -158,7 +152,6 @@ var configurations = [
         selector: "#newprice",
         timeout: 40,
         loadImages: false,
-        alreadyHasJQ: false,
         enabled: true,
         useProxy: false,
         interval: 60    //minutes
@@ -170,19 +163,17 @@ var configurations = [
         selector: "#currentPriceArea #current_price",
         timeout: 40,
         loadImages: false,
-        alreadyHasJQ: true,
         enabled: false,
         useProxy: false,
         interval: 180    //minutes
     },
     {
         identifier: 9,
-        name: "GNC Melatonin 3mg",
-        url: "http://www.gnc.com/GNC-Melatonin-3-mg/product.jsp?productId=16513406",
+        name: "GNC Melatonin 1 mg - Cherry",
+        url: "http://www.gnc.com/GNC-Melatonin-1-mg-Cherry/product.jsp?productId=16655036",
         selector: ".product-price.product-sprite .now, .product-promos.product-sprite",
         timeout: 40,    //seconds
         loadImages: false,
-        alreadyHasJQ: true,
         enabled: true,
         useProxy: true,
         interval: 30    //minutes
@@ -275,33 +266,26 @@ function checkOneConfiguration(task) {
         //console.log('Content: ' + page.content);
         clearTimeout(timeout);
         isFinished = true;
-        var injectSuccess;
-        if (!config.alreadyHasJQ) {
-            injectSuccess = !!page.injectJs("jquery.min.js");
-        }
-        else {
-            injectSuccess = true;
-        }
-        if (injectSuccess) {
-            waitFor(function() {
-                return page.evaluate(function(config) {
-                    return !!jQuery(config.selector).text();
+        waitFor(function() {
+            return page.evaluate(function(config) {
+                return document.querySelectorAll(config.selector).length > 0;
+            }, config);
+        }, function(criteriaMet) {
+            if (criteriaMet) {
+                result.text = page.evaluate(function(config) {
+                    var result = document.querySelectorAll(config.selector);
+                    var texts = [];
+                    for (var i = 0; i < result.length; i++) {
+                        texts.push(result[i].innerText);
+                    }
+                    return texts.join("\n");
                 }, config);
-            }, function(criteriaMet) {
-                if (criteriaMet) {
-                    result.text = page.evaluate(function(config) {
-                        return jQuery(config.selector).text();
-                    }, config);
-                } else {
-                    result.text = "";
-                    result.emptyText = true;
-                }
-                end();
-            }, 20 * 1000);
-        } else {
-            result.text = "Inject failure";
+            } else {
+                result.text = "";
+                result.emptyText = true;
+            }
             end();
-        }
+        }, 20 * 1000);
 
         function end() {
 //            result.text = result.text.replace(/[\t]+/g, "").replace(/[\r\n]+/g, "\n").trim();
