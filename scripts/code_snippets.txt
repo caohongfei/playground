@@ -1,0 +1,7 @@
+Visual Basic
+
+1. 打印时间戳
+
+	Dim start As DateTime = Now
+
+	Console.WriteLine("=" & Now.Subtract(start).Milliseconds)

@@ -41,7 +41,7 @@ select * from gtbTotalSolutionContract;
 select * from gtbTask where progressmemo is not null;
 
 select * from tbHolidays;
-select b.userid, * from tbEmployee a, tbsysuserinfo b where (employeename='陈琳' or employeename='朱向莹' or employeename='李蹊' 
+select b.userid, * from tbEmployee a, tbsysuserinfo b where (employeename='吴培' or employeename='朱向莹' or employeename='李蹊' 
 or employeename='王丽' or employeename='赵治国') and b.employeeguid = a.employeeguid and jobstatusid=0;
 select b.userid, a.employeename from tbEmployee a, tbsysuserinfo b where (employeename in ('汪洋', '黄猛', '刘绍梅', '张燕子', '林倩', '喻正刚', '陈新页', '沈强', '王佳美', '吴高永', '张静', '余兆林', '周丽', '李雪', '徐英秀', '文改改', '孙磊', '高志建', '王昕', '蔡丽丽', '王仝伟', '徐秀秀', '丁甜甜', '邓楠', '仲燕', '谷静娟', '朱霞霞', '朱玉琴', '陈敏', '陈红', '沈淑靖', '汪银玲', '丁珊', '刘继国', '黄娴', '张磊', '姜杰', '陈朝晖', '孙虹', '李雪冰')) and b.employeeguid = a.employeeguid and jobstatusid=0 order by b.userid;
 select * from v_InvoiceSum;
