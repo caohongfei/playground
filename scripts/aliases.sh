@@ -88,6 +88,7 @@ pk() {
 
 unset -f unpk
 unpk() {
+  dbcomp
   NAMES=('BAIDU' 'RAR_PREFIX_UNPK' 'RAR_PASS' 'RAR_TEMP')
   if ! check_required NAMES[@]; then return; fi
   local name=$(ls -lr $BAIDU/$RAR_PREFIX_UNPK* | awk '
