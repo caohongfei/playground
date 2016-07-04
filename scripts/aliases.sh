@@ -47,6 +47,8 @@ alias gstat='/Users/hcao/Documents/gitinspector-0.3.2/gitinspector/gitinspector.
 alias pjs='$PJS_HOME/bin/phantomjs'
 alias sshbwh='ssh root@bwh -p 29356'
 
+shopt -s expand_aliases
+
 unset -f gf
 gf() { 
   git ls-files | awk -v pattern="$@" '
