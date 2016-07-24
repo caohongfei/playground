@@ -46,6 +46,7 @@ alias gsb='gradle syncBack'
 alias gstat='/Users/hcao/Documents/gitinspector-0.3.2/gitinspector/gitinspector.py -f java,c,cpp,h,hpp,py,glsl,rb,js,sql,html,css'
 alias pjs='$PJS_HOME/bin/phantomjs'
 alias sshbwh='ssh root@bwh -p 29356'
+alias cpwebjs='scp -P 29356 /Users/hcao/github/playground/misc/webroot.js root@bwh:~/web'
 
 shopt -s expand_aliases
 
