@@ -180,7 +180,7 @@ var configurations = [
     },
     {
         identifier: 10,
-        name: "USDCHY",
+        name: "USDCNY",
         url: "http://www.kuaiyilicai.com/bank/rmbfx/b-cmbc.html",
         selector: ".ui-responsive.table-stripe tr:nth-child(2) td:nth-child(4)",
         timeout: 40,    //seconds
