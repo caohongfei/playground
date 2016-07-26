@@ -86,7 +86,7 @@ var configurations = [
         selector: ".product-price.product-sprite .now, .product-promos.product-sprite",
         timeout: 40,    //seconds
         loadImages: false,
-        enabled: true,
+        enabled: false,
         useProxy: true,
         interval: 30    //minutes
     },
@@ -97,7 +97,7 @@ var configurations = [
         selector: ".tm-fcs-panel",
         timeout: 20,
         loadImages: false,
-        enabled: true,
+        enabled: false,
         useProxy: false,
         interval: 30    //minutes
     },
@@ -108,7 +108,7 @@ var configurations = [
         selector: "ul.t.clearfix .on",
         timeout: 20,
         loadImages: false,
-        enabled: true,
+        enabled: false,
         useProxy: false,
         interval: 25    //minutes
     },
@@ -174,9 +174,20 @@ var configurations = [
         selector: ".product-price.product-sprite .now, .product-promos.product-sprite",
         timeout: 40,    //seconds
         loadImages: false,
-        enabled: true,
+        enabled: false,
         useProxy: true,
         interval: 30    //minutes
+    },
+    {
+        identifier: 10,
+        name: "USDCHY",
+        url: "http://www.kuaiyilicai.com/bank/rmbfx/b-cmbc.html",
+        selector: ".ui-responsive.table-stripe tr:nth-child(2) td:nth-child(4)",
+        timeout: 40,    //seconds
+        loadImages: false,
+        enabled: true,
+        useProxy: false,
+        interval: 5    //minutes
     }
 ];
 
