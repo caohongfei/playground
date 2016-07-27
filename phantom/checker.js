@@ -152,7 +152,7 @@ var configurations = [
         selector: "#newprice",
         timeout: 40,
         loadImages: false,
-        enabled: true,
+        enabled: false,
         useProxy: false,
         interval: 60    //minutes
     },
