@@ -130,7 +130,7 @@ var configurations = [
         selector: "#jd-price",
         timeout: 40,
         loadImages: false,
-        enabled: true,
+        enabled: false,
         useProxy: false,
         interval: 360    //minutes
     },
@@ -141,7 +141,7 @@ var configurations = [
         selector: "#jd-price",
         timeout: 40,
         loadImages: false,
-        enabled: true,
+        enabled: false,
         useProxy: false,
         interval: 360    //minutes
     },
