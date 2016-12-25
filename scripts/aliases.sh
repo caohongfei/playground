@@ -48,6 +48,12 @@ alias pjs='$PJS_HOME/bin/phantomjs'
 alias sshbwh='ssh root@bwh -p 29356'
 alias cpwebjs='scp -P 29356 /Users/hcao/github/playground/misc/webroot.js root@bwh:~/web'
 
+unset -f rcopy
+rcopy() {
+  rsync -v -e "ssh -p 29356" --progress root@bwh:/root/$1 .
+}
+
+
 shopt -s expand_aliases
 
 unset -f gf
