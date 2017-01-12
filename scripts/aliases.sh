@@ -91,7 +91,7 @@ pk() {
   file="$RAR_PREFIX_PK$now.rar"
   echo "Starting back up to $file..."
   rar a -hp$RAR_PASS -xLearn/00 -xLearn/VOA -xLearn/bpics -xLearn/pics -xLearn/bsnds -xLastFoot/jscripts -xLastFoot/images -xLastFoot/sounds -xLastFoot/videos -xLastFoot/html -xLastFoot/picauds -xLastFoot/TiddlySaver.jar -xLearn/TiddlySaver.jar -x*.DS_Store "$file" Learn LastFoot
-  mv "$file" $BAIDU
+  mv "$file" "$BAIDU"
   cd $olddir 
 }
 
