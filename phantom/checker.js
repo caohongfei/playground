@@ -185,9 +185,20 @@ var configurations = [
         selector: ".ui-responsive.table-stripe tr:nth-child(2) td:nth-child(4)",
         timeout: 40,    //seconds
         loadImages: false,
-        enabled: true,
+        enabled: false,
         useProxy: false,
         interval: 5    //minutes
+    },
+    {
+        identifier: 11,
+        name: "USDHKD",
+        url: "https://bank.hangseng.com/1/2/chi/rates/foreign-currency-tt-exchange-rates",
+        selector: ".rvp_rateTable tr:nth-child(3) td:nth-child(4)",
+        timeout: 120,    //seconds
+        loadImages: false,
+        enabled: true,
+        useProxy: true,
+        interval: 10    //minutes
     }
 ];
 
