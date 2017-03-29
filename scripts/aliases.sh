@@ -115,7 +115,7 @@ unpk() {
   echo $curdir
   cp $name $curdir
   mv $curdir/$RAR_PREFIX_UNPK*.rar $curdir/$RAR_PREFIX_UNPK.rar
-  unrar x -p$RAR_PASS $curdir/$RAR_PREFIX_UNPK.rar Learn LastFoot $curdir/OK/
+  unrar x -p$RAR_PASS $curdir/$RAR_PREFIX_UNPK.rar Learn LastFoot History $curdir/OK/
   /Applications/Beyond\ Compare.app/Contents/MacOS/BCompare "daily"
   rm -r -f $curdir/OK
   rm $curdir/$RAR_PREFIX_UNPK.rar
