@@ -92,7 +92,7 @@ pk() {
   now=$(date +"%Y-%m-%d-%H-%M")
   file="$RAR_PREFIX_PK$now.rar"
   echo "Starting back up to $file..."
-  rar a -hp$RAR_PASS -xLearn/00 -xLearn/VOA -xLearn/bpics -xLearn/pics -xLearn/bsnds -xLastFoot/jscripts -xLastFoot/images -xLastFoot/sounds -xLastFoot/videos -xLastFoot/html -xLastFoot/picauds -xLastFoot/TiddlySaver.jar -xLearn/TiddlySaver.jar -x*.DS_Store "$file" Learn LastFoot History
+  rar a -hp$RAR_PASS -xLearn/00 -xLearn/VOA -xLearn/bpics -xLearn/pics -xLearn/bsnds -x*/dep/ -x*/images/ -x*/sounds/ -x*/videos/ -x*/html/ -x*/picauds/ -xLearn/TiddlySaver.jar -x*.DS_Store "$file" Learn LastPace History
   mv "$file" "$BAIDU"
   cd $olddir 
 }
@@ -115,7 +115,7 @@ unpk() {
   echo $curdir
   cp $name $curdir
   mv $curdir/$RAR_PREFIX_UNPK*.rar $curdir/$RAR_PREFIX_UNPK.rar
-  unrar x -p$RAR_PASS $curdir/$RAR_PREFIX_UNPK.rar Learn LastFoot History $curdir/OK/
+  unrar x -p$RAR_PASS $curdir/$RAR_PREFIX_UNPK.rar Learn LastPace History $curdir/OK/
   /Applications/Beyond\ Compare.app/Contents/MacOS/BCompare "daily"
   rm -r -f $curdir/OK
   rm $curdir/$RAR_PREFIX_UNPK.rar
