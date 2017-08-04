@@ -1,0 +1,15 @@
+{
+  "name": "movie-indexer",
+  "version": "1.0.0",
+  "description": "Make your directory content searchable",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "directory",
+    "indexing"
+  ],
+  "author": "Hongfei Cao",
+  "license": "ISC"
+}
