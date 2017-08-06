@@ -29,8 +29,8 @@ store.name = resolvedDirName
 store.includes = {}
 
 walk(resolvedDirName, function(pathCursor, stat) {
-    if (path.basename(pathCursor).indexOf("._") === 0) {
-        // ignore ._ files
+    if (path.basename(pathCursor).indexOf("._") === 0 || path.basename(pathCursor) === ".DS_Store") {
+        // ignore ._ files and .DS_Store
         return
     }
     let realPath = pathCursor.substr(resolvedDirName.length + 1)    // +1 means the trailing \
