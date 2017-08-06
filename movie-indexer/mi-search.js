@@ -5,6 +5,7 @@ if (process.argv.length <= 2) {
 
 // search phrases are from index 2 and on
 const terms = process.argv.slice(2).map(s => s.toLowerCase())
+const numeral = require('numeral')
 
 const shared = require("./shared.js")
 
@@ -20,7 +21,11 @@ function searchOneIncludes(includes, results) {
         if (terms.every(term => {
             return key.toLowerCase().indexOf(term) >= 0
             })) {
-            results.push('    ' + content.path)
+            let line = '    ' + content.path
+            if (!content.isDirectory) {
+                line += " (" + numeral(content.statistics.size).format("0,0") + ")"
+            }
+            results.push(line)
         }
         else {
             if (content.isDirectory) {
