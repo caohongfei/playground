@@ -4,15 +4,22 @@
   "description": "Make your directory content searchable",
   "main": "index.js",
   "scripts": {
+    "mi": "node ./mi.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "mi": "./index.js"
+    "mi": "./mi.js"
   },
   "keywords": [
     "directory",
     "indexing"
   ],
   "author": "Hongfei Cao",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.11.0",
+    "load-json-file": "^2.0.0",
+    "walkdir": "^0.0.11",
+    "write-json-file": "^2.2.0"
+  }
 }
