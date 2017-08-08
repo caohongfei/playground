@@ -17,10 +17,12 @@
   "author": "Hongfei Cao",
   "license": "ISC",
   "dependencies": {
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
     "commander": "^2.11.0",
     "load-json-file": "^2.0.0",
+    "numeral": "^2.0.6",
     "walkdir": "^0.0.11",
-    "write-json-file": "^2.2.0",
-    "numeral": "^2.0.6"
+    "write-json-file": "^2.2.0"
   }
 }

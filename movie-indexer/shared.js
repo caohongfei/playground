@@ -1,7 +1,7 @@
 module.exports = {
     checkDBFileEnv: function() {
         if (!process.env.MI_DB) {
-            console.log('MI_DB should be configured as the path to the DB JSON file')
+            console.log('MI_DB should be configured as the path to a JSON file')
             process.exit(0)
         }
         console.log("Using database:", process.env.MI_DB)
