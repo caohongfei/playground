@@ -8,6 +8,8 @@ if (!process.env.MI_DB) {
 
 console.log('Using database:', process.env.MI_DB)
 
+const numeral = require('numeral')
+
 const mapper = {
     'scan': fn_scan,
     'remove': fn_remove,
@@ -15,6 +17,10 @@ const mapper = {
     's': fn_search,
     '?': fn_help,
     'q': fn_quit
+}
+
+function formatSize(size) {
+    return numeral(size).format('0,0')
 }
 
 loadDB(function(json) {
@@ -40,7 +46,9 @@ loadDB(function(json) {
                 }
             }
             else {
-                console.log('Unrecognized command:', commandName ? commandName : 'EMPTY')
+                if (commandName) {
+                    console.log('Unrecognized command:', commandName)
+                }
                 readCommand()
             }
         })
@@ -87,7 +95,9 @@ function printDBTitle(db) {
 }
 
 function printRow(i, db) {
-    console.log('%s: %s', (i + 1) < 10 ? ' ' + (i + 1) : i + 1, db[i].name)
+    let maxWidth = String(db.length).length
+    let currentWidth = String(i + 1).length
+    console.log('%s: %s (%s)', new Array(maxWidth - currentWidth + 1).join(' ') + String(i + 1), db[i].name, formatSize(computeTreeNodeSize(db[i])))
 }
 
 
@@ -220,9 +230,9 @@ function fn_list(json, params) {
             return
         }
         printRow(index - 1, db)
-        let keys = Object.keys(db[index - 1].includes)
-        keys.sort((a, b) => a.localeCompare(b))
-        keys.forEach(key => console.log('    ' + key))
+        traverseOrderly(db[index - 1].includes, function(key, value) {
+            console.log('    %s (%s)', key, formatSize(computeTreeNodeSize(value)))
+        })
     }
 }
 
@@ -249,11 +259,11 @@ function fn_remove(json, params) {
 }
 
 function traverseOrderly(object, callback) {
-    var array = Object.keys(object)
+    const array = Object.keys(object)
     array.sort((a, b) => {
         return a.localeCompare(b)
     })
-    for (var i = 0; i < array.length; i++) {
+    for (let i = 0; i < array.length; i++) {
         callback(array[i], object[array[i]])
     }
 }
@@ -265,22 +275,41 @@ function traverseOrderly(object, callback) {
  * @param callback take two arguments: fileName, fileInfo
  */
 function traverse(db, index, callback) {
+    if (index === -1) {
+        for (let i = 0; i < db.length; i++) {
+            traverseObjectWithIncludes(db[i], callback)
+        }
+    } else if (index >= 0 && index < db.length) {
+        traverseObjectWithIncludes(db[index], callback)
+    }
+}
+
+function traverseObjectWithIncludes(objectWithIncludes, callback) {
     function search(includes) {
         traverseOrderly(includes, function(fileName, fileInfo) {
-            callback(fileName, fileInfo)
-            if (fileInfo.includes) {
+            let stop = callback(fileName, fileInfo)
+            // If the callback returns true, don't traverse this branch any more
+            if (!stop && fileInfo.includes) {
                 search(fileInfo.includes)
             }
         })
     }
 
-    if (index === -1) {
-        for (let i = 0; i < db.length; i++) {
-            search(db[i].includes)
-        }
-    } else if (index >= 0 && index < db.length) {
-        search(db[index].includes)
+    search(objectWithIncludes.includes)
+}
+
+function computeTreeNodeSize(treeNodeObject) {
+    if (typeof treeNodeObject.isDirectory === "boolean" && !treeNodeObject.isDirectory) {
+        return treeNodeObject.statistics.size
     }
+
+    let size = 0
+    traverseObjectWithIncludes(treeNodeObject, function(name, info) {
+        if (!info.isDirectory) {
+            size += info.statistics.size
+        }
+    })
+    return size
 }
 
 function fn_search(json, params) {
@@ -297,7 +326,6 @@ function fn_search(json, params) {
     }
 
     const toFindDuplicates = (params[0] === 'XYZ')
-    const numeral = require('numeral')
 
     // search duplicated files
     function findDuplicates() {
@@ -307,7 +335,7 @@ function fn_search(json, params) {
         traverse(db, -1, function(fileName, fileInfo) {
             if (!fileInfo.isDirectory && fileInfo.statistics.size >= threshold) {
                 if (sizeToFileName[fileInfo.statistics.size]) {
-                    console.log('Size: ' + numeral(fileInfo.statistics.size).format('0,0'))
+                    console.log('Size: ' + formatSize(fileInfo.statistics.size))
                     console.log('    ' + sizeToFileName[fileInfo.statistics.size])
                     console.log('    ' + fileInfo.path)
                     found = true
@@ -318,7 +346,7 @@ function fn_search(json, params) {
             }
         })
         if (!found) {
-            console.log('Nothing found for threshold ' + numeral(threshold).format('0,0'))
+            console.log('Nothing found for threshold ' + formatSize(threshold))
         }
     }
 
@@ -332,10 +360,9 @@ function fn_search(json, params) {
                         return fileName.toLowerCase().indexOf(term) >= 0
                     })) {
                     let line = '    ' + fileInfo.path
-                    if (!fileInfo.isDirectory) {
-                        line += ' (' + numeral(fileInfo.statistics.size).format('0,0') + ')'
-                    }
+                    line += ' (' + formatSize(computeTreeNodeSize(fileInfo)) + ')'
                     results.push(line)
+                    return true // stop
                 }
             })
             if (results.length > 0) {
