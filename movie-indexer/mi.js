@@ -248,6 +248,41 @@ function fn_remove(json, params) {
     printDBTitle(db)
 }
 
+function traverseOrderly(object, callback) {
+    var array = Object.keys(object)
+    array.sort((a, b) => {
+        return a.localeCompare(b)
+    })
+    for (var i = 0; i < array.length; i++) {
+        callback(array[i], object[array[i]])
+    }
+}
+
+/**
+ *
+ * @param db
+ * @param index -1 means traverse whole db
+ * @param callback take two arguments: fileName, fileInfo
+ */
+function traverse(db, index, callback) {
+    function search(includes) {
+        traverseOrderly(includes, function(fileName, fileInfo) {
+            callback(fileName, fileInfo)
+            if (fileInfo.includes) {
+                search(fileInfo.includes)
+            }
+        })
+    }
+
+    if (index === -1) {
+        for (let i = 0; i < db.length; i++) {
+            search(db[i].includes)
+        }
+    } else if (index >= 0 && index < db.length) {
+        search(db[index].includes)
+    }
+}
+
 function fn_search(json, params) {
     if (params.length === 0) {
         console.log('You must specify something to search')
@@ -262,80 +297,57 @@ function fn_search(json, params) {
     }
 
     const toFindDuplicates = (params[0] === 'XYZ')
+    const numeral = require('numeral')
 
     // search duplicated files
-    function findDuplicates(db) {
+    function findDuplicates() {
         let sizeToFileName = {}
         let found = false
-        let threshold = 1000000
-        function search(includes) {
-            Object.keys(includes).forEach(key => {
-                let content = includes[key]
-                if (content.statistics.size < threshold) {
-                    return
-                }
-                if (!content.isDirectory) {
-                    if (sizeToFileName[content.statistics.size]) {
-                        console.log('Size: ' + numeral(content.statistics.size).format('0,0'))
-                        console.log('    ' + sizeToFileName[content.statistics.size])
-                        console.log('    ' + content.path)
-                        found = true
-                    }
-                    else {
-                        sizeToFileName[content.statistics.size] = content.path
-                    }
+        const threshold = isNaN(+params[1]) ? 100000000 : +params[1]
+        traverse(db, -1, function(fileName, fileInfo) {
+            if (!fileInfo.isDirectory && fileInfo.statistics.size >= threshold) {
+                if (sizeToFileName[fileInfo.statistics.size]) {
+                    console.log('Size: ' + numeral(fileInfo.statistics.size).format('0,0'))
+                    console.log('    ' + sizeToFileName[fileInfo.statistics.size])
+                    console.log('    ' + fileInfo.path)
+                    found = true
                 }
                 else {
-                    search(content.includes)
+                    sizeToFileName[fileInfo.statistics.size] = fileInfo.path
                 }
-            })
-        }
-        for (let i = 0; i < db.length; i++) {
-            search(db[i].includes)
-        }
+            }
+        })
         if (!found) {
             console.log('Nothing found for threshold ' + numeral(threshold).format('0,0'))
         }
     }
 
-    // search phrases are from index 2 and on
-    const terms = params.map(s => s.toLowerCase())
-    const numeral = require('numeral')
+    function searchPhrases() {
+        const terms = params.map(s => s.toLowerCase())
 
-    function searchOneIncludes(includes, results) {
-        let keys = Object.keys(includes)
-        keys.sort((a, b) => {
-            return a.localeCompare(b)
-        })
-        keys.forEach(key => {
-            let content = includes[key]
-            if (terms.every(term => {
-                    return key.toLowerCase().indexOf(term) >= 0
-                })) {
-                let line = '    ' + content.path
-                if (!content.isDirectory) {
-                    line += ' (' + numeral(content.statistics.size).format('0,0') + ')'
-                }
-                results.push(line)
-            }
-            else {
-                if (content.isDirectory) {
-                    searchOneIncludes(content.includes, results)
-                }
-            }
-        })
-    }
-
-    if (!toFindDuplicates) {
         for (let i = 0; i < db.length; i++) {
             let results = []
-            searchOneIncludes(db[i].includes, results)
+            traverse(db, i, function(fileName, fileInfo) {
+                if (terms.every(term => {
+                        return fileName.toLowerCase().indexOf(term) >= 0
+                    })) {
+                    let line = '    ' + fileInfo.path
+                    if (!fileInfo.isDirectory) {
+                        line += ' (' + numeral(fileInfo.statistics.size).format('0,0') + ')'
+                    }
+                    results.push(line)
+                }
+            })
             if (results.length > 0) {
                 printRow(i, db)
                 results.forEach(line => console.log(line))
             }
         }
+    }
+
+    if (!toFindDuplicates) {
+        searchPhrases()
     } else {
-        findDuplicates(db)
+        findDuplicates()
     }
 }
