@@ -9,6 +9,7 @@ if (!process.env.MI_DB) {
 console.log('Using database:', process.env.MI_DB)
 
 const numeral = require('numeral')
+const chalk = require('chalk')
 
 const mapper = {
     'scan': fn_scan,
@@ -31,7 +32,7 @@ loadDB(function(json) {
 
     function readCommand() {
         co(function* () {
-            return yield prompt('mi> ')
+            return yield prompt(chalk.blue.bold('mi> '))
         }).then(function(command) {
             let commandParams = minimist(argsplit(command))['_']
             let commandName = commandParams.shift()
@@ -97,7 +98,7 @@ function printDBTitle(db) {
 function printRow(i, db) {
     let maxWidth = String(db.length).length
     let currentWidth = String(i + 1).length
-    console.log('%s: %s (%s)', new Array(maxWidth - currentWidth + 1).join(' ') + String(i + 1), db[i].name, formatSize(computeTreeNodeSize(db[i])))
+    console.log('%s: %s (%s)', new Array(maxWidth - currentWidth + 1).join(' ') + String(i + 1), db[i].name, computeTreeNodeSize(db[i]))
 }
 
 
@@ -231,7 +232,7 @@ function fn_list(json, params) {
         }
         printRow(index - 1, db)
         traverseOrderly(db[index - 1].includes, function(key, value) {
-            console.log('    %s (%s)', key, formatSize(computeTreeNodeSize(value)))
+            console.log('    %s (%s)', key, computeTreeNodeSize(value))
         })
     }
 }
@@ -299,17 +300,19 @@ function traverseObjectWithIncludes(objectWithIncludes, callback) {
 }
 
 function computeTreeNodeSize(treeNodeObject) {
-    if (typeof treeNodeObject.isDirectory === "boolean" && !treeNodeObject.isDirectory) {
-        return treeNodeObject.statistics.size
-    }
-
     let size = 0
-    traverseObjectWithIncludes(treeNodeObject, function(name, info) {
-        if (!info.isDirectory) {
-            size += info.statistics.size
-        }
-    })
-    return size
+    if (typeof treeNodeObject.isDirectory === "boolean" && !treeNodeObject.isDirectory) {
+        size = treeNodeObject.statistics.size
+        return chalk.blue(formatSize(size))
+    }
+    else {
+        traverseObjectWithIncludes(treeNodeObject, function(name, info) {
+            if (!info.isDirectory) {
+                size += info.statistics.size
+            }
+        })
+        return chalk.magenta(formatSize(size))
+    }
 }
 
 function fn_search(json, params) {
@@ -360,7 +363,7 @@ function fn_search(json, params) {
                         return fileName.toLowerCase().indexOf(term) >= 0
                     })) {
                     let line = '    ' + fileInfo.path
-                    line += ' (' + formatSize(computeTreeNodeSize(fileInfo)) + ')'
+                    line += ' (' + computeTreeNodeSize(fileInfo) + ')'
                     results.push(line)
                     return true // stop
                 }
