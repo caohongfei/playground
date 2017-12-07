@@ -8,12 +8,39 @@
 <body>
 <div id="app">
     {{ message }}
+    <br>
+    <br>
+    <child :book="holder"></child>
+    <br>
+    <br>
+    {{ holder.text}}
 </div>
 <script type="application/javascript">
+    Vue.component('child', {
+        props: ['book'],
+        template: '<span>{{ message }} <button @click="change()">Click me</button> <span>{{ book.text }}</span></span> ',
+        computed: {
+            message: function () {
+                console.log(this.book === oneObject);
+                return "OK USED"
+            }
+        },
+        methods: {
+            change: function () {
+                console.log("change clicked");
+                this.book.text = "After clicked";
+            }
+        }
+    });
+    var oneObject = {
+        text: "Holder text"
+    };
+
     var app = new Vue({
         el: '#app',
         data: {
-            message: 'Hello Vue!'
+            message: 'Hello Vue!',
+            holder: oneObject
         }
     })
 </script>
