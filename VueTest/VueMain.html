@@ -10,25 +10,26 @@
     {{ message }}
     <br>
     <br>
-    <child :book="holder"></child>
+    <child :book="holder" :pillow="bed"></child>
     <br>
     <br>
     {{ holder.text}}
 </div>
 <script type="application/javascript">
     Vue.component('child', {
-        props: ['book'],
+        props: ['book', 'pillow'],
         template: '<span>{{ message }} <button @click="change()">Click me</button> <span>{{ book.text }}</span></span> ',
         computed: {
             message: function () {
                 console.log(this.book === oneObject);
-                return "OK USED"
+                return "OK USED " + this.pillow;
             }
         },
         methods: {
             change: function () {
                 console.log("change clicked");
                 this.book.text = "After clicked";
+//                this.pillow = "pillow";  //this will trigger a warning
             }
         }
     });
@@ -40,6 +41,7 @@
         el: '#app',
         data: {
             message: 'Hello Vue!',
+            bed: 'Go to bed',
             holder: oneObject
         }
     })
