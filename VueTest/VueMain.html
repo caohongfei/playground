@@ -16,7 +16,7 @@
     {{ holder.text}}
 </div>
 <script type="application/javascript">
-    Vue.component('child', {
+    let x = Vue.component('child', {
         props: ['book', 'pillow'],
         template: '<span>{{ message }} <button @click="change()">Click me</button> <span>{{ book.text }}</span></span> ',
         computed: {
@@ -45,6 +45,8 @@
             holder: oneObject
         }
     })
+
+    console.log("x=", new x())
 </script>
 </body>
 </html>
