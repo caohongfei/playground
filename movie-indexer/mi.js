@@ -1,12 +1,16 @@
 #!/usr/bin/env node
 
-// Check environment
-if (!process.env.MI_DB) {
-    console.log('MI_DB should be configured as the path to a JSON file')
-    process.exit(0)
+let dbFilePath = process.argv[2]
+if (!dbFilePath) {
+    // Check environment
+    if (!process.env.MI_DB) {
+        console.log('MI_DB should be configured as the path to a JSON file')
+        process.exit(0)
+    }
+    dbFilePath = process.env.MI_DB
 }
 
-console.log('Using database:', process.env.MI_DB)
+console.log('Using database:', dbFilePath)
 
 const numeral = require('numeral')
 const chalk = require('chalk')
@@ -59,7 +63,7 @@ loadDB(function(json) {
 })
 
 function loadDB(callback) {
-    require('load-json-file')(process.env.MI_DB)
+    require('load-json-file')(dbFilePath)
         .then(json => {
             // Check whether DB is valid
             if (!json['directories']) {
@@ -83,7 +87,7 @@ function loadDB(callback) {
 }
 
 function saveDB(json) {
-    require('write-json-file')(process.env.MI_DB, json)
+    require('write-json-file')(dbFilePath, json)
 }
 
 function printDBTitle(db) {
