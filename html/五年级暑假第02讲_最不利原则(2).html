@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>五年级暑假第01讲 最不利原则(2)</title>
+    <style>
+        body {
+            font-size: 20px;
+        }
+
+        h1 {
+            clear: both;
+        }
+
+        .answer {
+            display: flex;
+        }
+
+        .c1 {
+            width: 40px;
+        }
+
+        .c2 {
+        }
+
+        .c2 ul {
+            margin-top: 0;
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1>例1</h1>
+<div class="answer">
+    <div class="c1">解：</div>
+    <div class="c2">
+        <ul>
+            <li>要使相乘后的乘积是4的倍数，此乘积质因数分解后应该有两个2相乘，也就是说所有抽出的卡片上的数需要贡献出两个质因子2</li>
+            <li>1~100这100个数中，包含50个奇数，50个偶数，其中只有偶数能提供1个或多个质因子</li>
+            <li>最坏的情况下，前50个都抽出的是质数，第51个抽出的是一个偶数但不是一个4的倍数。</li>
+            <li>所以至少需要抽出52张卡片。</li>
+        </ul>
+    </div>
+</div>
+<h1>例2</h1>
+<div class="answer">
+    <div class="c1">解：</div>
+    <div class="c2">
+        <ul>
+            <li>这11个数中，除数字3以外，共有5对的差为15：
+                <div>5，20</div>
+                <div>8，23</div>
+                <div>11，26</div>
+                <div>14，29</div>
+                <div>17，32</div>
+            </li>
+            <li>要使取出的数中不能有差为15的数，可以取出3，再加上5对数中每对中的任意一个，共6个数。再多一个数，就必然有5对中的某一对都被取出来了。</li>
+            <li>所以任意取7个数，至少有两个数差为15。</li>
+        </ul>
+    </div>
+</div>
+<h1>例3</h1>
+<div class="answer">
+    <div class="c1">解：</div>
+    <div class="c2">
+        <ul>
+            <li>这是一个等差数列，共有8对数的和为52：
+                <div>2，50</div>
+                <div>5，47</div>
+                <div>8，44</div>
+                <div>11，41</div>
+                <div>14，38</div>
+                <div>17，35</div>
+                <div>20，32</div>
+                <div>23，29</div>
+                <div>26是单出来的</div>
+            </li>
+            <li>要使取出来的数没有两个数的和为52，最多可以有1+8=9个数，其中1是数字26，8是从上述8对中每对任取一个。</li>
+            <li>因此，任意取出10个数，一定能保证有两个数的和为52。</li>
+        </ul>
+    </div>
+</div>
+<h1>例4</h1>
+<div class="answer">
+    <div class="c1">解：</div>
+    <div class="c2">
+        <ul>
+            <li>要使取的自然数中没有两个数的差是7，意味着如果选了自然数k，那么k+7、k+14等等都不能再选，k−7、k−14等等也不能再选。
+                <table>
+                    <tbody>
+                    <tr><td>不能选</td><td>可以选</td><td>不能选</td></tr>
+                    <tr><td>...，k−7</td><td>k</td><td>k+7，...</td></tr>
+                    <tr><td>...，k−6</td><td>k+1</td><td>k+8，...</td></tr>
+                    <tr><td>...，k−5</td><td>k+2</td><td>k+9，...</td></tr>
+                    <tr><td>...，k−4</td><td>k+3</td><td>k+10，...</td></tr>
+                    <tr><td>...，k−3</td><td>k+4</td><td>k+11，...</td></tr>
+                    <tr><td>...，k−2</td><td>k+5</td><td>k+12，...</td></tr>
+                    <tr><td>...，k−1</td><td>k+6</td><td>k+13，...</td></tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>所以，最多可以取7个连续的自然数，这样它们中任意两个的差都不是7的倍数。但只要再多一个数，就一定有两个数的差是7的倍数。</li>
+            <li>因此，至少取8个自然数数，才能保证至少有两个数的差是7的倍数</li>
+        </ul>
+    </div>
+</div>
+<h1>例5</h1>
+<div class="answer">
+    <div class="c1">解：</div>
+    <div class="c2">
+        <ul>
+            <li>根据题意，选出的数中，任意两个数的和都不能在被选中的数里面</li>
+            <li>那么，可以选取数最多的方法是从最大的数开始取起，因为大的数的和一定不在这2018个数中</li>
+            <li>因此取的数是：2018，2017，...，1010，1009。从1008开始，都不能再取了。因为1008+1009=2017，在前面取的数里。1+1009=1010，也在前面取的数里</li>
+            <li>最多可取的数的个数：2018−1009+1=1010</li>
+        </ul>
+    </div>
+</div>
+<h1>例6</h1>
+<div class="answer">
+    <div class="c1">解：</div>
+    <div class="c2">
+        <ul>
+            <li>两位数从10到99，共90个，其数字和最小为1，最大为18。不同的数字和包含的两位数的个数如下：
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>数字和</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>数字举例</td>
+                        <td>10</td>
+                        <td>11, 20</td>
+                        <td>12, 21, 30</td>
+                        <td>13, ..., 40</td>
+                        <td>14, ..., 50</td>
+                        <td>15, ..., 60</td>
+                        <td>16, ..., 70</td>
+                        <td>17, ..., 80</td>
+                        <td>18, ..., 90</td>
+                        <td>19, ..., 91</td>
+                        <td>29, ..., 92</td>
+                        <td>39, ..., 93</td>
+                        <td>49, ..., 94</td>
+                        <td>59, ..., 95</td>
+                        <td>69, ..., 96</td>
+                        <td>79, 88, 97</td>
+                        <td>89, 98</td>
+                        <td>99</td>
+                    </tr>
+                    <tr>
+                        <td>数字的个数</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>8</td>
+                        <td>7</td>
+                        <td>6</td>
+                        <td>5</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>要使任意取出的n个数中有三个数字和相等，最坏的情况是，把18种数字和的数字都取一遍。余下的数字中，数字和的种数只有16种了（因为1和18都只有一个数）。这时最坏的情况是把余下的16种再各取一遍，这时会有两个数的数字和相等。再多取一个，就一定有三个数的数字和相等了。</li>
+            <li>因此n的最小值是：18+16+1=35</li>
+        </ul>
+    </div>
+</div>
+<h1>例7</h1>
+<div class="answer">
+    <div class="c1">解：</div>
+    <div class="c2">
+        <ul>
+            <li>这21个数可以分成10组，每组中一个数是另一个的3倍。50不属于任何组。
+                <div>2, 6</div>
+                <div>3, 9</div>
+                <div>...</div>
+                <div>13, 39</div>
+                <div>14, 42</div>
+            </li>
+            <li>要使取出的数中，没有任何两个数存在3倍关系，最多能取1+10=11个数，其中1表示50，10表示从10组中每组任意挑一个数。</li>
+            <li>因此，如果取了12个数，一定有两个数存在3倍关系。</li>
+        </ul>
+    </div>
+</div>
+<h1>例8</h1>
+<div class="answer">
+    <div class="c1">解：</div>
+    <div class="c2">
+        <ul>
+            <li>把这个正方形分成3×3的9个小正方形，每个小正方形的面积正好为1平方米
+                <div><img src="p1.png"></div>
+            </li>
+            <li>要使4个点组成的四边形面积都大于等于1平方米，意味着没有4个点落在同一个小正方形内</li>
+            <li>要使得没有4个点落在同一个小正方形内，最多可以放(4−1)×9=27个点。因此，任意放入28个点，必有4个点落在同一个小正方形内，它们组成的四边形的面积一定小于1平方米。</li>
+        </ul>
+    </div>
+</div>
+<!--
+<h1>例x</h1>
+<div class="answer">
+    <div class="c1">解：</div>
+    <div class="c2">
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+</div>
+-->
+</body>
+</html>
