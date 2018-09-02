@@ -38,7 +38,7 @@ loadDB(function(json) {
         co(function* () {
             return yield prompt(chalk.blue.bold('mi> '))
         }).then(function(command) {
-            let commandParams = minimist(argsplit(command))['_']
+            let commandParams = argsplit(command)
             let commandName = commandParams.shift()
             let fn = mapper[commandName] // the first param is the command name
             if (fn) {
@@ -179,11 +179,12 @@ function fn_scan(json, params) {
                 currentHolder = currentHolder.includes[segment]
                 if (i === pathSegments.length - 1) {
                     currentHolder.statistics = {
-                        size: stat.size,
-                        atime: stat.atime,
-                        mtime: stat.mtime,
-                        ctime: stat.ctime,
-                        birthtime: stat.birthtime
+                        size: stat.size
+                        // size: stat.size,
+                        // atime: stat.atime,
+                        // mtime: stat.mtime,
+                        // ctime: stat.ctime,
+                        // birthtime: stat.birthtime
                     }
                     currentHolder.path = realPath
                 }
@@ -358,7 +359,7 @@ function fn_search(json, params) {
     }
 
     function searchPhrases() {
-        const terms = params.map(s => s.toLowerCase())
+        const terms = params.map(s => String(s).toLowerCase())
 
         for (let i = 0; i < db.length; i++) {
             let results = []
