@@ -8,45 +8,44 @@
 <body>
 <div id="app">
     {{ message }}
-    <br>
-    <br>
-    <child :book="holder" :pillow="bed"></child>
-    <br>
-    <br>
-    {{ holder.text}}
+    <button @click="f">click</button>
 </div>
 <script type="application/javascript">
-    let x = Vue.component('child', {
-        props: ['book', 'pillow'],
-        template: '<span>{{ message }} <button @click="change()">Click me</button> <span>{{ book.text }}</span></span> ',
-        computed: {
-            message: function () {
-                console.log(this.book === oneObject);
-                return "OK USED " + this.pillow;
-            }
-        },
-        methods: {
-            change: function () {
-                console.log("change clicked");
-                this.book.text = "After clicked";
-//                this.pillow = "pillow";  //this will trigger a warning
-            }
-        }
-    });
-    var oneObject = {
-        text: "Holder text"
-    };
-
     var app = new Vue({
         el: '#app',
         data: {
             message: 'Hello Vue!',
-            bed: 'Go to bed',
-            holder: oneObject
+        },
+        methods: {
+            f: function() {
+                this.$destroy()
+            }
+        },
+        beforeCreate: (a, b) => {
+            console.log('beforeCreate', a, b)
+        },
+        created: (a, b) => {
+            console.log('created', a, b)
+        },
+        beforeMount: (a, b) => {
+            console.log('beforeMount', a, b)
+        },
+        mounted: (a, b) => {
+            console.log('mounted', a, b)
+        },
+        beforeUpdate: (a, b) => {
+            console.log('beforeUpdate', a, b)
+        },
+        updated: (a, b) => {
+            console.log('updated', a, b)
+        },
+        beforeDestroy: (a, b) => {
+            console.log('beforeDestroy', a, b)
+        },
+        destroyed: (a, b) => {
+            console.log('destroyed', a, b)
         }
     })
-
-    console.log("x=", new x())
 </script>
 </body>
 </html>
