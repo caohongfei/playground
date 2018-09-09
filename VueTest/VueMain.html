@@ -8,9 +8,49 @@
 <body>
 <div id="app">
     {{ message }}
-    <button @click="f">click</button>
+    <test :v="'abc'"></test>
+    <test :v="'def'"></test>
+    <button @click="f()">destroy</button>
 </div>
 <script type="application/javascript">
+    Vue.component('test', {
+        template: '<button @click="f()">{{ v }} {{ x }}</button>',
+        props: ['v'],
+        data: () => {
+            return {
+                x: 'new'
+            }
+        },
+        methods: {
+            f: function() {
+                this.x = 'newsss'
+            }
+        },
+        beforeCreate: function () {
+            console.log('beforeCreate')
+        },
+        created: function () {
+            console.log('created')
+        },
+        beforeMount: function () {
+            console.log('beforeMount')
+        },
+        mounted: function () {
+            console.log('mounted')
+        },
+        beforeUpdate: function () {
+            console.log('beforeUpdate', this)
+        },
+        updated: function () {
+            console.log('updated', this)
+        },
+        beforeDestroy: function () {
+            console.log('beforeDestroy', this.v)
+        },
+        destroyed: function () {
+            console.log('destroyed', this.v)
+        }
+    })
     var app = new Vue({
         el: '#app',
         data: {
@@ -20,30 +60,6 @@
             f: function() {
                 this.$destroy()
             }
-        },
-        beforeCreate: (a, b) => {
-            console.log('beforeCreate', a, b)
-        },
-        created: (a, b) => {
-            console.log('created', a, b)
-        },
-        beforeMount: (a, b) => {
-            console.log('beforeMount', a, b)
-        },
-        mounted: (a, b) => {
-            console.log('mounted', a, b)
-        },
-        beforeUpdate: (a, b) => {
-            console.log('beforeUpdate', a, b)
-        },
-        updated: (a, b) => {
-            console.log('updated', a, b)
-        },
-        beforeDestroy: (a, b) => {
-            console.log('beforeDestroy', a, b)
-        },
-        destroyed: (a, b) => {
-            console.log('destroyed', a, b)
         }
     })
 </script>
