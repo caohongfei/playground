@@ -7,10 +7,12 @@
 </head>
 <body>
 <div id="app">
-    {{ message }}
-    <test :v="'abc'"></test>
-    <test :v="'def'"></test>
-    <button @click="f()">destroy</button>
+    <div v-if="showIt">
+        {{ message }}
+        <test :v="'abc'"></test>
+        <test :v="'def'"></test>
+    </div>
+    <button @click="f()">toggle</button>
 </div>
 <script type="application/javascript">
     Vue.component('test', {
@@ -55,10 +57,11 @@
         el: '#app',
         data: {
             message: 'Hello Vue!',
+            showIt: true
         },
         methods: {
             f: function() {
-                this.$destroy()
+                this.showIt = !this.showIt;
             }
         }
     })
