@@ -10,12 +10,13 @@
     <div v-if="showIt">
         {{ message }}
         <test :v="'abc'"></test>
-        <test :v="'def'"></test>
+        <test-more :v="'def'"></test-more>
+        <test-gdp :v="'ghf'"></test-gdp>
     </div>
     <button @click="f()">toggle</button>
 </div>
 <script type="application/javascript">
-    Vue.component('test', {
+    var options = {
         template: '<button @click="f()">{{ v }} {{ x }}</button>',
         props: ['v'],
         data: () => {
@@ -24,8 +25,8 @@
             }
         },
         methods: {
-            f: function() {
-                this.x = 'newsss'
+            f: function () {
+                this.x = 'pure'
             }
         },
         beforeCreate: function () {
@@ -41,7 +42,7 @@
             console.log('mounted')
         },
         beforeUpdate: function () {
-            console.log('beforeUpdate', this)
+            console.log('beforeUpdate')
         },
         updated: function () {
             console.log('updated', this)
@@ -52,7 +53,38 @@
         destroyed: function () {
             console.log('destroyed', this.v)
         }
-    })
+    }
+    var TestComponent = Vue.component('test', options)
+    var TestComponent2 = Vue.component('test-more', TestComponent.extend({
+        data: () => {
+            return {
+                k: 'nimble'
+            }
+        },
+        methods: {
+            f: function () {
+                this.x = this.k
+            }
+        },
+        created: function () {
+            console.log('created in test 2')
+        }
+    }))
+    var TestComponent3 = Vue.component('test-gdp', TestComponent2.extend({
+        data: () => {
+            return {
+                k: 'nimble'
+            }
+        },
+        methods: {
+            f: function () {
+                this.x = this.k
+            }
+        },
+        created: function () {
+            console.log('created in test 3')
+        }
+    }))
     var app = new Vue({
         el: '#app',
         data: {
@@ -60,11 +92,48 @@
             showIt: true
         },
         methods: {
-            f: function() {
-                this.showIt = !this.showIt;
+            f: function () {
+                this.showIt = !this.showIt
             }
         }
     })
+
+    function arrayToTree() {
+        var x = [
+            {level: 1, text: 'a'},
+            {level: 2, text: 'b'},
+            {level: 2, text: 'c'},
+            {level: 3, text: 'd'},
+            {level: 3, text: 'e'},
+            {level: 1, text: 'f'},
+            {level: 1, text: 'g'},
+            {level: 2, text: 'h'}
+        ]
+        var rootObject = {level: 0}
+        var stack = [rootObject], topElement, target
+        for (var i = 0; i < x.length; i++) {
+            topElement = stack[stack.length - 1]
+            if (x[i].level === topElement.level + 1) {
+                target = topElement
+            }
+            else if (x[i].level <= topElement.level) {
+                for (var j = 0; j < topElement.level - x[i].level + 1; j++) {
+                    stack.pop()
+                }
+                target = stack[stack.length - 1]
+            }
+            else {
+                console.log("Error")
+                break
+            }
+            target.children = target.children || []
+            target.children.push(x[i])
+            stack.push(x[i])
+        }
+        console.log(rootObject)
+    }
+
+    arrayToTree()
 </script>
 </body>
 </html>
