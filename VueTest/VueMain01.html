@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue Test</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <div v-for="e in mapper">
+        value = {{ e }}
+    </div>
+    <button @click="f()">toggle</button>
+</div>
+<script type="application/javascript">
+    var app = new Vue({
+        el: '#app',
+        data: {
+            occupation: [{value: 1}, {value: 3}]
+        },
+        methods: {
+            f: function () {
+                this.occupation.push({value: 4})
+            }
+        },
+        computed: {
+            mapper: function () {
+                console.log('mapper')
+                return this.occupation.map(v => v.value)
+            }
+        }
+    })
+</script>
+</body>
+</html>

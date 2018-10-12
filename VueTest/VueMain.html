@@ -7,17 +7,30 @@
 </head>
 <body>
 <div id="app">
-    <div v-if="showIt">
+    <div v-if="g()">
         {{ message }}
         <test :v="'abc'"></test>
+<!--
         <test-more :v="'def'"></test-more>
         <test-gdp :v="'ghf'"></test-gdp>
+-->
+        <div v-for="e in mapper">
+            value={{ e }}
+        </div>
     </div>
     <button @click="f()">toggle</button>
 </div>
 <script type="application/javascript">
+    Vue.component('subtest', {
+        template: '<a href="http://www.baidu.com">{{ name }}</a>',
+        data: () => {
+            return {
+                name: 'sub'
+            }
+        }
+    })
     var options = {
-        template: '<button @click="f()">{{ v }} {{ x }}</button>',
+        template: '<span><button @click="f()">{{ v }} {{ x }}</button><subtest></subtest></span>',
         props: ['v'],
         data: () => {
             return {
@@ -33,13 +46,13 @@
             console.log('beforeCreate')
         },
         created: function () {
-            console.log('created')
+            console.log('created', this.v)
         },
         beforeMount: function () {
-            console.log('beforeMount')
+            console.log('beforeMount', this.v)
         },
         mounted: function () {
-            console.log('mounted')
+            console.log('mounted', this.v)
         },
         beforeUpdate: function () {
             console.log('beforeUpdate')
@@ -55,6 +68,7 @@
         }
     }
     var TestComponent = Vue.component('test', options)
+/*
     var TestComponent2 = Vue.component('test-more', TestComponent.extend({
         data: () => {
             return {
@@ -73,7 +87,7 @@
     var TestComponent3 = Vue.component('test-gdp', TestComponent2.extend({
         data: () => {
             return {
-                k: 'nimble'
+                k: 'nimbler'
             }
         },
         methods: {
@@ -85,15 +99,41 @@
             console.log('created in test 3')
         }
     }))
+*/
     var app = new Vue({
         el: '#app',
         data: {
             message: 'Hello Vue!',
-            showIt: true
+            showIt: true,
+            occupation: [{value: 1}, {value: 3}]
         },
         methods: {
             f: function () {
-                this.showIt = !this.showIt
+                // this.showIt = !this.showIt
+                this.occupation.push({value: 4})
+                // this.occupation[1].value = 4
+                // this.occupation = []
+            },
+            g: function () {
+                return true
+            }
+        },
+        beforeCreate: function () {
+            console.log('beforeCreate App')
+        },
+        created: function () {
+            console.log('created App')
+        },
+        beforeMount: function () {
+            console.log('beforeMount App')
+        },
+        mounted: function () {
+            console.log('mounted App')
+        },
+        computed: {
+            mapper: function () {
+                console.log('mapper')
+                return this.occupation.map(v => v.value)
             }
         }
     })
@@ -130,10 +170,12 @@
             target.children.push(x[i])
             stack.push(x[i])
         }
-        console.log(rootObject)
+        console.log("arrayToTree", rootObject)
     }
 
+/*
     arrayToTree()
+*/
 </script>
 </body>
 </html>

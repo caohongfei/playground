@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue Test</title>
+    <script src="vue.js"></script>
+    <style>
+        .red {
+            color: red;
+        }
+        .black {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <div v-for="one in mapper">
+        <span :class="color(one)">
+            value = {{ one }}
+        </span>
+    </div>
+    <button @click="f()">toggle</button>
+</div>
+<script type="application/javascript">
+    var app = new Vue({
+        el: '#app',
+        data: {
+            occupation: [{value: 1}, {value: 2}]
+        },
+        methods: {
+            f: function () {
+                this.occupation.push({value: 4})
+            },
+            color (one) {
+                return one % 2 === 0 ? 'red' : 'black'
+            }
+        },
+        computed: {
+            mapper: function () {
+                return this.occupation.map(v => v.value)
+            }
+        }
+    })
+</script>
+</body>
+</html>
