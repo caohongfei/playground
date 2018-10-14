@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue Test</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <div>
+        Top Level: {{ cities }}
+    </div>
+    <button @click="f()">Toggle Top Level</button>
+    <hr>
+    <child></child>
+</div>
+<script type="application/javascript">
+    Vue.component('child', {
+        template: '<div><grandchild></grandchild></div>',
+        data: () => {
+            return {};
+        }
+    });
+    Vue.component('grandchild', {
+        template: '<div><div>Grandchild: {{ foo }}</div> <button @click="g()">Toggle Grandchild</button></div>',
+        data: () => {
+            return {};
+        },
+        inject: ['foo', 'g']
+    });
+    var app = new Vue({
+        el: '#app',
+        data: {
+            cities: ['SH', 'ZJ']
+        },
+        provide() {
+            return {
+                foo: this.cities,
+                g: this.f
+            };
+        },
+        methods: {
+            f: function() {
+                this.cities.push('BJ');
+            }
+        }
+    });
+</script>
+</body>
+</html>
