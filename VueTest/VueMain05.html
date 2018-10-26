@@ -12,11 +12,12 @@
     </div>
     <button @click="f()">Toggle Top Level</button>
     <hr>
-    <child></child>
+    <child :size="sizeOfCities" :size-to-pass="sizeToPass"></child>
 </div>
 <script type="application/javascript">
     Vue.component('child', {
-        template: '<div><grandchild></grandchild></div>',
+        template: '<div><div>Size: {{ size }} in Child, and {{ sizeToPass[0] }}</div><grandchild></grandchild></div>',
+        props: ['size', 'sizeToPass'],
         data: () => {
             return {};
         }
