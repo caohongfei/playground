@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue Test</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <div>
+        Top Level: {{ cities.a }}
+    </div>
+    <button @click="f()">Toggle Top Level</button>
+    <hr>
+    <child></child>
+</div>
+<script type="application/javascript">
+    Vue.component('child', {
+        template: '<div><div>Child: </div><grandchild></grandchild></div>',
+        props: [],
+        data: () => {
+            return {};
+        }
+    });
+    Vue.component('grandchild', {
+        template: '<div><div>Size: {{ cities.a }}</div> <button @click="f()">Toggle Grandchild</button></div>',
+        data: () => {
+            return {};
+        },
+        inject: ['cities', 'f']
+    });
+    var app = new Vue({
+        el: '#app',
+        data: {
+            cities: {}
+        },
+        created: function () {
+            Vue.set(this.cities, 'a', 1)
+        },
+        provide() {
+            return {
+                cities: this.cities,
+                f: this.f
+            };
+        },
+        computed: {
+        },
+        methods: {
+            f: function() {
+                Vue.set(this.cities, 'a', 3)
+            }
+        }
+    });
+</script>
+</body>
+</html>
