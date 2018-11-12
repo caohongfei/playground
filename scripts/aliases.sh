@@ -91,7 +91,7 @@ pk() {
   now=$(date +"%Y-%m-%d-%H-%M")
   file="$RAR_PREFIX_PK$now.rar"
   echo "Starting back up to $file..."
-  rar a -hp$RAR_PASS -xLearn/00 -xLearn/VOA -xLearn/bpics -xLearn/pics -xLearn/bsnds -x*/dep/ -x*/*I/ -x*/d/ -x*/r/ -x*/images/ -x*/sounds/ -x*/videos/ -x*/html/ -x*/picauds/ -xLearn/TiddlySaver.jar -x*.DS_Store "$file" Learn LastPace History
+  rar a -hp$RAR_PASS -xLearn/00 -xLearn/VOA -xLearn/bpics -xLearn/pics -xLearn/bsnds -x*/dep/ -x*/*I/ -x*/d/ -x*/r/ -x*/images/ -x*/sounds/ -x*/videos/ -x*/s/*/html/ -x*/picauds/ -xLearn/TiddlySaver.jar -x*.DS_Store "$file" Learn LastPace History
   mv "$file" "$BAIDU"
   cd $olddir 
 }
