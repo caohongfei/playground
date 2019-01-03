@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Vue Test</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <div v-click-touch="onPut">
+        Top Level: 1
+    </div>
+    <child></child>
+    <div v-click-touch="() => onPut()">
+        Top Level: 2
+    </div>
+</div>
+<script type="application/javascript">
+    Vue.directive('click-touch', {
+        inserted: function (el, binding, vnode) {
+            binding.value();
+            // vnode.context[binding.expression]();
+        }
+    });
+    Vue.component('child', {
+        template: '<div><div v-click-touch="func">Child</div></div>',
+        methods: {
+            func: function () {
+                console.log("inside func", this);
+            }
+        }
+    });
+    var app = new Vue({
+        el: '#app',
+        methods: {
+            onPut: function () {
+                console.log("inside onPut", this);
+            }
+        }
+    });
+</script>
+</body>
+</html>

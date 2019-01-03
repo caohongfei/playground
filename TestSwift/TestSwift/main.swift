@@ -8,4 +8,10 @@
 
 import Foundation
 
-print("Hello, World!")
+let a = [5, 7, 68, 333]
+let b = 1.0..<5.0
+let c = AnySequence(a)
+
+let possibleNumbers = ["1", "2", "three", "///4///", "5"]
+let flatMapped: [Int] = possibleNumbers.compactMap { str in Int(str) }
+print(flatMapped)
