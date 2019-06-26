@@ -83,6 +83,13 @@ check_required() {
   done
 }
 
+unset -f bkcode
+bkcode() {
+  now=$(date +"%Y-%m-%d-%H-%M")
+  file="MySource$now.bundle"
+  git bundle create /Volumes/WD-RED/Backup/MyCode/$file --all
+}
+
 unset -f pk
 pk() {
   NAMES=('BAIDU' 'RAR_SOURCE' 'RAR_PREFIX_PK' 'RAR_PASS')
