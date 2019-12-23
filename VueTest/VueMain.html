@@ -7,7 +7,7 @@
 </head>
 <body>
 <div id="app">
-    <div v-if="g()">
+    <div v-if="isShown()">
         {{ message }}
         <test :v="'abc'"></test>
 <!--
@@ -18,19 +18,29 @@
             value={{ e }}
         </div>
     </div>
-    <button @click="f()">toggle</button>
+    <button @click="appendOne()">toggle</button>
 </div>
 <script type="application/javascript">
     Vue.component('subtest', {
-        template: '<a href="http://www.baidu.com">{{ name }}</a>',
+        template: '<div><a href="http://www.baidu.com">{{ name }}</a> <span>{{ derived }}</span><button @click="setName()">setName</button></div>',
         data: () => {
             return {
                 name: 'sub'
             }
+        },
+        computed: {
+            derived: function () {
+                return this.name + ", cao"
+            }
+        },
+        methods: {
+            setName: function() {
+                this.name = 'level'
+            }
         }
     })
     var options = {
-        template: '<span><button @click="f()">{{ v }} {{ x }}</button><subtest></subtest></span>',
+        template: '<span><button @click="setToPure()">{{ v }} {{ x }}</button><subtest></subtest></span>',
         props: ['v'],
         data: () => {
             return {
@@ -38,7 +48,7 @@
             }
         },
         methods: {
-            f: function () {
+            setToPure: function () {
                 this.x = 'pure'
             }
         },
@@ -108,13 +118,13 @@
             occupation: [{value: 1}, {value: 3}]
         },
         methods: {
-            f: function () {
+            appendOne: function () {
                 // this.showIt = !this.showIt
                 this.occupation.push({value: 4})
                 // this.occupation[1].value = 4
                 // this.occupation = []
             },
-            g: function () {
+            isShown: function () {
                 return true
             }
         },
