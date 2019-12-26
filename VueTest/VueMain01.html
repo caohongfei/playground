@@ -7,6 +7,8 @@
 </head>
 <body>
 <div id="app">
+    <div>count={{ occupation.length }}</div>
+    <hr>
     <div v-for="e in mapper">
         value = {{ e }}
     </div>
@@ -20,7 +22,7 @@
         },
         methods: {
             f: function () {
-                this.occupation.push({value: 4})
+                this.occupation.push({value: Math.floor(Math.random() * 1000)})
             }
         },
         computed: {
