@@ -80,17 +80,6 @@ function formatDate(date) {
 
 var configurations = [
     {
-        identifier: 1,
-        name: "GNC三倍鱼油60 softgels",
-        url: "http://www.gnc.com/GNC-Triple-Strength-Fish-Oil-New-Improved-Formula-of-Triple-Strength-Fish-Oil-1500/product.jsp?productId=67338576",
-        selector: ".product-price.product-sprite .now, .product-promos.product-sprite",
-        timeout: 40,    //seconds
-        loadImages: false,
-        enabled: false,
-        useProxy: true,
-        interval: 30    //minutes
-    },
-    {
         identifier: 2,
         name: "老山冻干粉",
         url: "http://detail.tmall.com/item.htm?spm=a1z10.1-b.w8171270-9438708950.55.zZhz6k&id=14943725766",
@@ -108,42 +97,9 @@ var configurations = [
         selector: "ul.t.clearfix .on",
         timeout: 20,
         loadImages: false,
-        enabled: false,
+        enabled: true,
         useProxy: false,
         interval: 25    //minutes
-    },
-    {
-        identifier: 4,
-        name: "Natural Made",
-        url: "http://www.amazon.com/Nature-Made-Omega-3-1200mg-Softgels/dp/B0029O0BYU/ref=sr_1_4?ie=UTF8&qid=1422948466&sr=8-4&keywords=nature+made+fish+oil+1200+mg+180+softgels",
-        selector: "#priceblock_ourprice_row .a-span12",
-        timeout: 40,
-        loadImages: false,
-        enabled: false,
-        useProxy: false,
-        interval: 30    //minutes
-    },
-    {
-        identifier: 5,
-        name: "京东 道达尔(TOTAL) 快驰7000 4L",
-        url: "http://item.jd.com/736879.html",
-        selector: "#jd-price",
-        timeout: 40,
-        loadImages: false,
-        enabled: false,
-        useProxy: false,
-        interval: 360    //minutes
-    },
-    {
-        identifier: 6,
-        name: "京东 道达尔(TOTAL) 快驰7000 1L",
-        url: "http://item.jd.com/849744.html",
-        selector: "#jd-price",
-        timeout: 40,
-        loadImages: false,
-        enabled: false,
-        useProxy: false,
-        interval: 360    //minutes
     },
     {
         identifier: 7,
@@ -158,25 +114,14 @@ var configurations = [
     },
     {
         identifier: 8,
-        name: "一号店 SanmiuSunflower新苗向日葵饼干 乳酪味夹心 700g 菲律宾进口",
-        url: "http://item.yhd.com/item/7866315",
-        selector: "#currentPriceArea #current_price",
+        name: "菲律宾 sunflower 新苗向日葵 芝士乳酪夹心饼干 早餐代餐办公室休闲零食 700g/盒",
+        url: "https://item.jd.com/4068469.html",
+        selector: ".summary-price .p-price",
         timeout: 40,
         loadImages: false,
-        enabled: false,
+        enabled: true,
         useProxy: false,
         interval: 180    //minutes
-    },
-    {
-        identifier: 9,
-        name: "GNC Melatonin 1 mg - Cherry",
-        url: "http://www.gnc.com/GNC-Melatonin-1-mg-Cherry/product.jsp?productId=16655036",
-        selector: ".product-price.product-sprite .now, .product-promos.product-sprite",
-        timeout: 40,    //seconds
-        loadImages: false,
-        enabled: false,
-        useProxy: true,
-        interval: 30    //minutes
     },
     {
         identifier: 10,
@@ -190,15 +135,26 @@ var configurations = [
         interval: 5    //minutes
     },
     {
-        identifier: 11,
-        name: "USDHKD",
-        url: "https://bank.hangseng.com/1/2/chi/rates/foreign-currency-tt-exchange-rates",
-        selector: ".rvp_rateTable tr:nth-child(3) td:nth-child(4)",
+        identifier: 12,
+        name: "罗氏（ROCHE）血糖仪家用血糖试纸 卓越金采型（100片装+100支采血针）",
+        url: "https://item.jd.com/1784892.html",
+        selector: ".summary-price .p-price",
         timeout: 120,    //seconds
         loadImages: false,
         enabled: true,
-        useProxy: true,
-        interval: 10    //minutes
+        useProxy: false,
+        interval: 180    //minutes
+    },
+    {
+        identifier: 13,
+        name: "摩根国际债券(美元)(每月派息-现金派息) U44707",
+        url: "https://www.hangseng.com/zh-cn/fundsupermart/fund/fundinfo/?fundCode=U44707",
+        selector: ".fs_table-body .fs_bottom.fs_table-row",
+        timeout: 120,    //seconds
+        loadImages: false,
+        enabled: true,
+        useProxy: false,
+        interval: 180    //minutes
     }
 ];
 
@@ -355,4 +311,3 @@ for (var i = 0; i < configurations.length; i++) {
 }
 
 scheduleTasks.repeat(500);  //Pick up a task every 0.5s
-

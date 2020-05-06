@@ -52,7 +52,7 @@ alias cpwebjs='scp -P 29356 /Users/hcao/github/playground/misc/webroot.js root@b
 
 unset -f rcopy
 rcopy() {
-  rsync -v -e "ssh -p 29356" --progress root@bwh:/root/$1 .
+  rsync -v -e "ssh -p 28155" --progress root@bwhgia:/root/$1 .
 }
 
 
