@@ -152,7 +152,7 @@ var configurations = [
         selector: ".fs_table-body .fs_bottom.fs_table-row",
         timeout: 120,    //seconds
         loadImages: false,
-        enabled: true,
+        enabled: false,
         useProxy: false,
         interval: 180    //minutes
     }

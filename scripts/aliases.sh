@@ -64,7 +64,7 @@ gf() {
     BEGIN {
       i = 0;
     }
-    tolower($0) ~ pattern {
+    tolower($0) ~ tolower(pattern) {
       if (i == 0) {
         printf "%s", $1 | "/usr/bin/pbcopy"; print $1, "[37;40m--- copied to clipboard[0m"; 
         i ++;
@@ -120,8 +120,11 @@ unpk() {
 #  local curdir=$( cd "$( dirname "${BASH_SOURCE[1]}" )" && pwd )
 #  if [[ $name == "" ]]; then echo No expected file name found; sleep 1800; return; fi
   echo $curdir
+  echo $name
   cp $name $curdir
+  echo 'copy done'
   mv $curdir/$RAR_PREFIX_UNPK*.rar $curdir/$RAR_PREFIX_UNPK.rar
+  echo 'rename done'
   unrar x -p$RAR_PASS $curdir/$RAR_PREFIX_UNPK.rar Learn LastPace History $curdir/OK/
   /Applications/Beyond\ Compare.app/Contents/MacOS/BCompare "daily"
   rm -r -f $curdir/OK

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Vue Test</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <div>1.0×10<sup>9</sup></div>
+    <button @click="main">click</button>
+    <lt-table>
+        <lt-column v-if="flag" attr1="5" task="ab" :box="func">
+            <template slot-scope="scope">
+                <div>custom button {{ scope.x }} {{ flag }}</div>
+            </template>
+        </lt-column>
+<!--        <lt-column attr1="6" task="cd"></lt-column>-->
+<!--        <lt-column v-for="i in 6" attr1="7" :aim="i" :key="i"></lt-column>-->
+        <lt-column attr1="8" :box="func2">
+            <template slot-scope="scope">
+                <div>hongfei {{ scope.x }}</div>
+            </template>
+        </lt-column>
+    </lt-table>
+</div>
+<script type="application/javascript">
+    Vue.component('lt-column', {
+        // template: '<div><slot></slot></div>'
+/*
+        render: function (createElement) {
+            if (this.$scopedSlots.default) {
+                return createElement('div', {}, [1, 2, 5].map(x => this.$scopedSlots.default({x})));
+            }
+            else {
+                return null;
+            }
+        }
+*/
+    });
+    Vue.component('lt-row', {
+        template: '<tr><td>{{ title }}</td></tr>',
+        props: ['title'],
+        methods: {
+            f: function () {
+                console.log("inside f()");
+            }
+        }
+    });
+    Vue.component('lt-table', {
+        // template: '<table><slot></slot></table>',
+        render: function (createElement) {
+            let a = [];
+            this.$slots.default.forEach(x => {
+                // console.log(x);
+                if (x.data) {
+                    a.push({attrs: x.data.attrs, scopedSlot: x.data.scopedSlots ? x.data.scopedSlots.default : null});
+                }
+            });
+            a.forEach(x => {
+                if (x.attrs.box) {
+                    x.attrs.box('cao');
+                }
+            });
+            return createElement('div', a.map(x => [createElement("lt-row", {props: {title: x.attrs.attr1}}), x.scopedSlot({x: 25})]))
+        },
+        methods: {
+            g: function () {
+                console.log("method g()");
+            }
+        }
+    });
+    var app = new Vue({
+        data: {
+            flag: true
+        },
+        el: '#app',
+        methods: {
+            main: function () {
+                console.log("method main()", this);
+                this.flag = !this.flag;
+            },
+            func: function () {
+                console.log('flag', this.flag);
+            },
+            func2: function (a) {
+                console.log('func2', this.flag, a);
+            }
+        }
+    });
+</script>
+</body>
+</html>

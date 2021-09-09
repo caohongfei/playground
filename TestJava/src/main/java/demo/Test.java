@@ -1,34 +1,21 @@
 package demo;
 
-class Test {
-    public static void main(String[] args) {
-//        test();
-        String s = "abc'def";
-        String x = s.replaceAll("'", "\\\\'");
-        System.out.println(x);
-    }
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+import java.util.List;
 
-    private static void test() {
-        int count = 10000000, times = 3000;
-        Integer[] integers = new Integer[count];
-        for (int i = 0; i < count; i++) {
-            integers[i] = ((int) (Math.random() * 10000000));
-        }
-        boolean x;
-        long s = System.currentTimeMillis();
-        for (int k = 0; k < times; k++) {
-            for (int i = 0; i < count; i++) {
-                x = (integers[i] & 1) == 1;
-            }
-        }
-        System.out.println(System.currentTimeMillis() - s);
+public class Test<T> {
+    public List<T> list;
 
-        s = System.currentTimeMillis();
-        for (int k = 0; k < times; k++) {
-            for (int i = 0; i < count; i++) {
-                x = (integers[i] % 7 != 0);
-            }
-        }
-        System.out.println(System.currentTimeMillis() - s);
+    public static void main(String[] args) throws Exception {
+        Test<String> sub = new Test<String>() {
+        };
+        final ParameterizedType genericTypeOfField = (ParameterizedType) sub.getClass().getField("list")
+                .getGenericType();
+
+        final Type actualTypeArgumentOfField = genericTypeOfField.getActualTypeArguments()[0];
+        final Type typeParameterOfClass      = Test.class.getTypeParameters()[0];
+
+        System.out.println(actualTypeArgumentOfField == typeParameterOfClass);
     }
 }
