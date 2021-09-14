@@ -9,6 +9,12 @@
         props: {
             msg: String
         },
+        created() {
+            console.log('about created')
+        },
+        unmounted() {
+            console.log('about unmounted')
+        },
         methods: {
             goToDashboard() {
                 console.log(this.$router)

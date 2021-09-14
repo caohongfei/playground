@@ -23,4 +23,5 @@ const router = createRouter({
 
 const app = createApp(App)
 app.use(router)
-app.mount('#app')
+const vm = app.mount('#app')
+console.log(vm.count === vm.$data.count)

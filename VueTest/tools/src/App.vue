@@ -12,6 +12,9 @@ import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
+  data() {
+    return {count: [8]}
+  },
   components: {
     HelloWorld
   }
