@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Vue Test</title>
+    <script src="vue.global.3.2.13.js"></script>
+</head>
+<body>
+<div id="app">
+    <div>1.0×10<sup>9</sup></div>
+    <div>{{ flag }}</div>
+    <button @click="main">click</button>
+    <button @click="print">print</button>
+    <sub1 :passed="passed"></sub1>
+</div>
+<script type="application/javascript">
+    var app = Vue.createApp({
+        data () {
+            return {
+                flag: true,
+                passed: {a: 'sync', b: 'china'}
+            }
+        },
+        methods: {
+            main: function () {
+                this.flag = !this.flag;
+                this.passed = {a: String(Math.round(Math.random() * 10000)), b: String(Math.round(Math.random() * 10000))};
+            },
+            print: function () {
+                console.log('print', this.passed);
+            }
+        },
+        watch: {
+            passed: {
+                deep: true,
+                handler (val, oldVal) {
+                    console.log('watch', val);
+                }
+            }
+        }
+    });
+    app.component('sub1', {
+        template: '<input type="text" v-model="passed.a"/><input type="text" :value="passed.b" @input="onChange"/>',
+        props: ['passed'],
+        methods: {
+            onChange (e) {
+                this.passed.b = e.target.value;
+            }
+        }
+    });
+    app.mount('#app');
+</script>
+</body>
+</html>

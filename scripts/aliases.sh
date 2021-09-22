@@ -48,7 +48,19 @@ alias gstat='/Users/hcao/Documents/gitinspector-0.3.2/gitinspector/gitinspector.
 alias pjs='$PJS_HOME/bin/phantomjs'
 alias sshbwh='ssh root@bwh -p 29356'
 alias sshbwhgia='ssh root@bwhgia -p 28155'
+alias sshbwhgia_ipv6='ssh root@2001:470:c:682::2 -p 28155'
 alias cpwebjs='scp -P 29356 /Users/hcao/github/playground/misc/webroot.js root@bwh:~/web'
+alias chl='sudo ch.sh 172.20.10.1'
+alias ch2='sudo ch.sh 192.168.1.2'
+alias ch3='sudo ch.sh 192.168.1.3'
+alias ch4='sudo ch.sh 192.168.1.4'
+alias ch5='sudo ch.sh 192.168.1.5'
+alias ch6='sudo ch.sh 192.168.1.6'
+alias ch7='sudo ch.sh 192.168.1.7'
+alias ch8='sudo ch.sh 192.168.1.8'
+alias ch9='sudo ch.sh 192.168.1.9'
+alias cho='sudo ch.sh 192.168.40.131'
+alias apch='sudo apachectl start'
 
 unset -f rcopy
 rcopy() {
@@ -99,7 +111,7 @@ pk() {
   now=$(date +"%Y-%m-%d-%H-%M")
   file="$RAR_PREFIX_PK$now.rar"
   echo "Starting back up to $file..."
-  rar a -hp$RAR_PASS -xLearn/00 -xLearn/VOA -xLearn/bpics -xLearn/pics -xLearn/bsnds -x*/dep/ -x*/*I/ -x*/d/ -x*/r/ -x*/u/ -x*/images/ -x*/sounds/ -x*/videos/ -x*/s/*/html/ -x*/picauds/ -xLearn/TiddlySaver.jar -x*.DS_Store "$file" Learn LastPace History
+  rar a -hp$RAR_PASS -xLearn/00 -xLearn/VOA -xLearn/bpics -xLearn/pics -xLearn/bsnds -x*/dep/ -x*/.git/ -x*/*I/ -x*/d/ -x*/r/ -x*/u/ -x*/images/ -x*/sounds/ -x*/videos/ -x*/s/*/html/ -x*/picauds/ -xLearn/TiddlySaver.jar -x*.DS_Store "$file" Learn LastPace History
   mv "$file" "$BAIDU"
   cd $olddir 
 }
