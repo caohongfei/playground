@@ -2,6 +2,8 @@ package com.test;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
 
 /**
  * @author Hongfei Cao
@@ -11,7 +13,10 @@ import javax.ws.rs.Path;
 public class PathTest {
 
     @GET
-    public String func() {
-        return "China is rising";
+    @Path("{username}")
+    @Produces("text/html")
+    public String func(@PathParam("username") String userName) {
+        System.out.println(userName);
+        return "China is <b>rising</b>";
     }
 }
