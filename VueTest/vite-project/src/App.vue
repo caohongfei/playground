@@ -3,7 +3,7 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './components/HelloWorld.vue'
 
-import { ref, reactive, version, shallowRef, shallowReactive, readonly, watch, isRef, unref, toRef, toRaw, computed } from 'vue'
+import { ref, reactive, version, shallowRef, shallowReactive, readonly, watch, isRef, unref, toRef, toRaw, computed, watchEffect } from 'vue'
 const v = {k: 5, j: {m: 8}}
 const param = reactive(v)
 const derived = computed(() => param)
@@ -12,6 +12,24 @@ window.p2 = param
 
 const theme = reactive({
   color: 'red'
+})
+
+const hello = ref(undefined)
+const a = ref(1)
+const b = computed(() => {
+  console.log('inside computed')
+  return a.value + 5
+})
+
+function f() {
+  console.log('start, b=', b.value)
+  a.value = 11
+  console.log('end, b=', b.value)
+}
+watch(b, () => {
+  hello.value.f1()
+}, {
+  flush: 'post'
 })
 </script>
 
@@ -26,8 +44,8 @@ const theme = reactive({
       </a>
     </div>
     <p>I am inside p</p>
-    <HelloWorld msg="Vite + Vue" :any-obj="param"/>
-    <div>{{ version }} <button @click="theme.color ='blue'">Click me</button></div>
+    <HelloWorld msg="Vite + Vue" :any-obj="b" ref="hello"/>
+    <div>{{ version }} <button @click="f">Click me</button></div>
   </div>
 </template>
 

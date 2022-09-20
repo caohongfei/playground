@@ -389,14 +389,14 @@ const puppeteer = require('puppeteer');
     // 同一个level里，一次只能用一个；level值不表示优先级，不同level可以以任意顺序组合，虽然有些顺序一定是更贵的
     let parserConfig = [{
         splitter: '',
-        regex: /满([\d.]+)减([\d.]+)/,
-        keys: ['whole_sum', 'subtraction'],
-        level: 2
-    }, {
-        splitter: '',
         regex: /满([\d.]+)件，总价打([\d.]+)折/,
         keys: ['quantity', 'discount'],
         level: 1
+    }, {
+        splitter: '',
+        regex: /满([\d.]+)减([\d.]+)/,
+        keys: ['whole_sum', 'subtraction'],
+        level: 2
     }, {
         splitter: '',
         regex: /每满([\d.]+)元，可减([\d.]+)元现金/,

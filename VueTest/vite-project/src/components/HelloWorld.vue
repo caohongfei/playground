@@ -3,10 +3,16 @@ import { ref, isRef } from 'vue'
 
 let props = defineProps({
   msg: String,
-  anyObj: Object
+  anyObj: Number
 })
 window.p3 = props
 const count = ref(0)
+
+function f1() {
+  console.log('f1', props.anyObj)
+}
+
+defineExpose({ f1 })
 </script>
 
 <template>
